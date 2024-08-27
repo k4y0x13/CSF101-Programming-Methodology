@@ -4,6 +4,10 @@
 
 ---
 
+[Git & GitHub](./misc/git-github.md)
+
+---
+
 # Units
 
 - [Unit 1 - Foundations of Computing & Digital Logic]()
@@ -18,3 +22,15 @@
     - [Exercise](./unit2/ex_7_functions_scope.md)
   - [File Operations](./unit2/8.file-operations.md)
     - [Exercise](./unit2/ex_8_file_operations.md)
+  - [Unit 1 Challange Ex](./unit1/unit1-challange-ex.md)
+- [Unit 3 - Data Structures]()
+  - [Intro & Elementary DS](./unit3/1.2.intro-elementary-ds.md)
+    - [Exercise](./unit3/ex_1.2_intro_elementary_ds.md)
+  - [Linear Data Structures](./unit3/2.linear-data-structures.md)
+    - [Exercise](./unit3/ex_2_linear_data_structures.md)
+  - [Linked Data Structures](./unit3/3.linked-data-structures.md)
+    - [Exercise](./unit3/ex_3_linked_data_structures.md)
+  - [Tree Data Structure](./unit3/4.tree-data-structure.md)
+    - [Exercise](./unit3/ex_4_tree_data_structure.md)
+  - [Graph Data Structure](./unit3/5.graph-data-structure.md)
+    - [Exercise](./unit3/ex_5_graph_data_structure.md)

@@ -1,0 +1,13 @@
+Fruit Transaction Analysis Summary
+===================================
+Total sales: $3013.02
+Most popular fruit: grapes (228 transactions)
+Average transaction value: $15.06
+Biggest spender: Person59 ($118.24)
+
+Fruit Popularity Chart:
+apples     | ################ (186)
+bananas    | ################# (200)
+grapes     | #################### (228)
+oranges    | ################# (197)
+pears      | ################ (189)
