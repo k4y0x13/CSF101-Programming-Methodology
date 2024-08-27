@@ -11,6 +11,8 @@
 # Units
 
 - [Unit 1 - Foundations of Computing & Digital Logic]()
+  - [Introduction to Computing](./unit1/1.introduction-to-computing.md)
+- 
 - [Unit 2 - Introduction to Programming]()
   - [Variables & Data Types](./unit2/4.variables-data-types.md)
     - [Exercise](./unit2/ex_4_variables_data_types.md)
