@@ -22,7 +22,7 @@
     - [Exercise](./unit2/ex_7_functions_scope.md)
   - [File Operations](./unit2/8.file-operations.md)
     - [Exercise](./unit2/ex_8_file_operations.md)
-  - [Unit 1 Challange Ex](./unit1/unit1-challange-ex.md)
+  - [Unit 2 Challange Ex](./unit2/unit2-challange-ex.md)
 - [Unit 3 - Data Structures]()
   - [Intro & Elementary DS](./unit3/1.2.intro-elementary-ds.md)
     - [Exercise](./unit3/ex_1.2_intro_elementary_ds.md)

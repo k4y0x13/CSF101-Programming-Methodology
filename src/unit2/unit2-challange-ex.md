@@ -8,7 +8,7 @@ In this challenge, you'll work with a file containing fruit transaction data. Yo
 
 1. Make sure you're in the `challenge-ex` directory.
 2. Create a new file called `ex-ch1.py`.
-3. The input file `fruit_transactions.txt` should be in the same directory.
+3. Get the input file `fruit_transactions.txt` from your CSF Tutor (Kamal).
 
 At the end of the challenge, your directory should look like this:
 
