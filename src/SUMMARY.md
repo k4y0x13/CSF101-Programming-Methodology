@@ -12,8 +12,11 @@
 
 - [Unit 1 - Foundations of Computing & Digital Logic]()
   - [Introduction to Computing](./unit1/1.introduction-to-computing.md)
-- 
 - [Unit 2 - Introduction to Programming]()
+  - [Computational Problem Solving]()
+    - [Psuedocode](./unit2/3.1-psuedocode.md)
+    - [Flowcharts](./unit2/3.2-flowcharts.md)
+      - [Exercise](./unit2/ex_3.1-2_flowcharts.md)
   - [Variables & Data Types](./unit2/4.variables-data-types.md)
     - [Exercise](./unit2/ex_4_variables_data_types.md)
   - [Operators](./unit2/5.operators.md)
