@@ -2,6 +2,10 @@
 
 [Introduction](./intro.md)
 
+--- 
+
+[Module Descriptor](./misc/module-descriptor.md)
+
 ---
 
 [Git & GitHub](./misc/git-github.md)
