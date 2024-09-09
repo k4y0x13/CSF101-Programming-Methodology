@@ -17,3 +17,7 @@ Think of an object as a real-world entity, like a car or a book. A car object wo
 A **class** is a blueprint or template for creating objects. It defines the attributes and methods that all objects of that class will share. You can think of a class as a factory that produces objects. The class defines the specifications, and each object created from the class is an instance with its own set of data.
 
 ![Classes](../assets/Classes.png)
+
+A class is a blueprint for creating objects. An object is an instance of a class.
+Let's create a simple Student class having attributes/properties name and age. 
+![Class Example](../assets/PythonClass.png) 
