@@ -16,7 +16,8 @@
 
 - [Unit 1 - Foundations of Computing & Digital Logic]()
   - [Introduction to Computing](./unit1/1.introduction-to-computing.md)
-- [Unit 2 - Introduction to Programming]()
+
+- [Unit 2 - Programming Fundamentals]()
   - [Computational Problem Solving]()
     - [Psuedocode](./unit2/3.1-psuedocode.md)
     - [Flowcharts](./unit2/3.2-flowcharts.md)
@@ -32,6 +33,7 @@
   - [File Operations](./unit2/8.file-operations.md)
     - [Exercise](./unit2/ex_8_file_operations.md)
   - [Unit 2 Challange Ex](./unit2/unit2-challange-ex.md)
+
 - [Unit 3 - Data Structures]()
   - [Intro & Elementary DS](./unit3/1.2.intro-elementary-ds.md)
     - [Exercise](./unit3/ex_1.2_intro_elementary_ds.md)
@@ -43,7 +45,8 @@
     - [Exercise](./unit3/ex_4_tree_data_structure.md)
   - [Graph Data Structure](./unit3/5.graph-data-structure.md)
     - [Exercise](./unit3/ex_5_graph_data_structure.md)
-- [Unit 2 - Data Structures]()
+
+- [Unit 4 - Searching & Sorting Algorithms]()
   - [Introduction to storing data: The "WHY?"](./unit3/1-intro-why.md)
   - [Elementary Data Structure: The Array](./unit3/2-elementary-ds-array.md)
   - [Linear Data Structures]()
@@ -61,3 +64,33 @@
     - [Tree Traversals: In-order, Pre-order, Post-order](./unit3/3.5.3-tree-traversals.md)
   - [Graph Data Structure](./unit3/3.6-graph-ds.md)
   - [Hash Table / Map Data Structure](./unit3/3.7-map-ds.md)
+
+- [Unit 5 - Introduction to Computational Problems & Strategies]()
+  - [Space Time Complexity - Asymptotic Notation]()
+  - [Arrays & Hashing]()
+  - [Two Pointers]()
+  - [Sliding Window]()
+  - [Stacks & Queues]()
+  - [Linked Lists]()
+  - [Recursions]()
+  - [Bit Manipulation]()
+
+---
+
+[Practical Assignment I](./practical_assignments/cap1.md)
+[Practical Assignment II](./practical_assignments/cap2.md)
+
+---
+
+[Practical_Work Submission Guideline](./practical_works/pw_guideline.md)
+[Practical Work I](./practical_works/pw1.md)
+[Practical Work II](./practical_works/pw2.md)
+[Practical Work III](./practical_works/pw3.md)
+[Practical Work IV](./practical_works/pw4.md)
+[Practical Work V](./practical_works/pw5.md)
+[Practical Work VI](./practical_works/pw6.md)
+[Practical Work VII](./practical_works/pw7.md)
+[Practical Work VII](./practical_works/pw8.md)
+[Practical Work IX](./practical_works/pw9.md)
+
+---
