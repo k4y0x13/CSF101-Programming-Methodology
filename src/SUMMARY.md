@@ -12,7 +12,10 @@
 
 - [Unit 1 - Foundations of Computing & Digital Logic]()
   - [Introduction to Computing](./unit1/1.introduction-to-computing.md)
-- 
+  - [Infromation Representation](./unit1/2.information-representation.md)
+  - [Character Encoding](./unit1/3.character-encoding.md)
+  - [Boolean logic and logic gates](./unit1/4.boolean-logic-and-logic-gates.md)
+  - [Introduction to Computer Architecture](./unit1/5.Introduction-to-computer-architecture.md)
 - [Unit 2 - Introduction to Programming]()
   - [Variables & Data Types](./unit2/4.variables-data-types.md)
     - [Exercise](./unit2/ex_4_variables_data_types.md)
