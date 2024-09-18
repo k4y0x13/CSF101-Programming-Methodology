@@ -38,19 +38,20 @@
     - [Exercise](./unit2/ex_8_file_operations.md)
   - [Unit 2 Challange Ex](./unit2/unit2-challange-ex.md)
 
-- [Unit 3 - Data Structures]()
-  - [Intro & Elementary DS](./unit3/1.2.intro-elementary-ds.md)
-    - [Exercise](./unit3/ex_1.2_intro_elementary_ds.md)
-  - [Linear Data Structures](./unit3/2.linear-data-structures.md)
-    - [Exercise](./unit3/ex_2_linear_data_structures.md)
-  - [Linked Data Structures](./unit3/3.linked-data-structures.md)
-    - [Exercise](./unit3/ex_3_linked_data_structures.md)
-  - [Tree Data Structure](./unit3/4.tree-data-structure.md)
-    - [Exercise](./unit3/ex_4_tree_data_structure.md)
-  - [Graph Data Structure](./unit3/5.graph-data-structure.md)
-    - [Exercise](./unit3/ex_5_graph_data_structure.md)
+<!--NOTE: Old Content-->
+<!--- [Unit 3 - Data Structures]()-->
+<!--  - [Intro & Elementary DS](./unit3/1.2.intro-elementary-ds.md)-->
+<!--    - [Exercise](./unit3/ex_1.2_intro_elementary_ds.md)-->
+<!--  - [Linear Data Structures](./unit3/2.linear-data-structures.md)-->
+<!--    - [Exercise](./unit3/ex_2_linear_data_structures.md)-->
+<!--  - [Linked Data Structures](./unit3/3.linked-data-structures.md)-->
+<!--    - [Exercise](./unit3/ex_3_linked_data_structures.md)-->
+<!--  - [Tree Data Structure](./unit3/4.tree-data-structure.md)-->
+<!--    - [Exercise](./unit3/ex_4_tree_data_structure.md)-->
+<!--  - [Graph Data Structure](./unit3/5.graph-data-structure.md)-->
+<!--    - [Exercise](./unit3/ex_5_graph_data_structure.md)-->
 
-- [Unit 4 - Searching & Sorting Algorithms]()
+- [Unit 3 - Data Structures](./unit3/0-slide.md)
   - [Introduction to storing data: The "WHY?"](./unit3/1-intro-why.md)
   - [Elementary Data Structure: The Array](./unit3/2-elementary-ds-array.md)
   - [Linear Data Structures]()
@@ -68,6 +69,14 @@
     - [Tree Traversals: In-order, Pre-order, Post-order](./unit3/3.5.3-tree-traversals.md)
   - [Graph Data Structure](./unit3/3.6-graph-ds.md)
   - [Hash Table / Map Data Structure](./unit3/3.7-map-ds.md)
+
+- [Unit 4 - Searching & Sorting Algorithms]()
+  - [Linear Search]()
+  - [Binary Search]()
+  - [Depth-First Search]()
+  - [Insertion Sort]()
+  - [Quick Sort]()
+  - [Bubble Sort]()
 
 - [Unit 5 - Introduction to Computational Problems & Strategies]()
   - [Space Time Complexity - Asymptotic Notation]()
