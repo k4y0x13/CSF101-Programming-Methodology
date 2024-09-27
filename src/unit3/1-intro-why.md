@@ -1,7 +1,5 @@
 # Introduction to storing data: The "WHY?"
 
-TODO: Add link for supporting google slide.
-
 ## 1. Introduction to Storing Data
 
 ### Why it matters:
@@ -15,7 +13,7 @@ In the early days of computing, memory was extremely limited and expensive. Prog
 
 As computers evolved, memory became more abundant, but the principles of efficient data storage remained crucial for performance.
 
-TODO: Early computer pictures  
+![Old Computers](../assets/ancient-pc.jpeg)
 
 ### How computers work:
 
@@ -38,7 +36,7 @@ The choice between static and dynamic data structures impacts memory usage, perf
 - Static structures: These have a fixed size, allocated at compile time. They're stored in a part of memory called the stack, which is fast but limited in size.
 - Dynamic structures: These can grow or shrink at runtime. They're stored in the heap, a larger but slower part of memory.
 
-TODO: Picture of Stack and Heap of a computer
+![Stack and a Heap](../assets/stack-vs-heap.jpg)
 
 ### Historical context:
 

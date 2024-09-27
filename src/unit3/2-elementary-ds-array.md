@@ -3,7 +3,7 @@
 ## Definition
 An Array is a fundamental data structure that stores a fixed-size sequential collection of elements of the same type.
 
-TODO: Add picture of an array representation
+![Array Representation](../assets/array-ds.webp)
 
 ## Key Properties
 1. **Fixed Size**: Once declared, the size of an array is fixed.
