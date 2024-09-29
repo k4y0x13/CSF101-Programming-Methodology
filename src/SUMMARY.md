@@ -87,7 +87,6 @@
     - [Valid Anagram Problem](./unit5/valid-anagram.md)
     - [Two Sums Problem](./unit5/two-sums.md)
     - [Hash Table Implementations]()
-    <!--- [Hash Table Implementations](./unit5/hash-table-implementation.md)-->
     - [Collision Resolution Techniques]()
   - [Two Pointers]()
     - [Valid Palindrome Problem](./unit5/valid-palindrome.md)
