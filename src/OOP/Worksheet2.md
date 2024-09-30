@@ -84,3 +84,10 @@ These classes inherit from BankAccount. They are used to create specific types o
     ![PersonalBusinessAccountClass](../assets/w2_mainClass.png)
 
 7. Lastly, save the python code and start executing it. 
+
+
+### Submission Instructions:
+
+1. Push your code to the repository.
+2. Submit Your Work:
+    - Share the link to your GitHub repository in the google classroom for module tutor to review your code. 
