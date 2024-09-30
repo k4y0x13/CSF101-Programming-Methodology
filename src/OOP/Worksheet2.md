@@ -88,6 +88,7 @@ These classes inherit from BankAccount. They are used to create specific types o
 
 ### Submission Instructions:
 
-1. Push your code to the repository.
-2. Submit Your Work:
+1. Comment the code based on your understanding wherever necessary. 
+2. Push your code to the repository.
+3. Submit Your Work:
     - Share the link to your GitHub repository in the google classroom for module tutor to review your code. 
