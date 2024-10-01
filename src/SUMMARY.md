@@ -37,6 +37,7 @@
   - [File Operations](./unit2/8.file-operations.md)
     - [Exercise](./unit2/ex_8_file_operations.md)
   - [Unit 2 Challange Ex](./unit2/unit2-challange-ex.md)
+  - [Recursion Examples](./unit2/9.recursion.md)
 
 <!--NOTE: Old Content-->
 <!--- [Unit 3 - Data Structures]()-->
