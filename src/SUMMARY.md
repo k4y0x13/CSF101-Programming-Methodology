@@ -120,6 +120,8 @@
     - [Reverse bits problem](./unit5/reverse-bits.md)
     - [Missing Numbers Problem](./unit5/missing-number.md)
     - [Bitwise operations and their applications]()
+  - [Exercises]()
+    - [Exercise 1](./unit5/class-ex1.md)
 
 - [Unit Object Oriented Programming]()
    - [Notes](./OOP/Unit5.md)
