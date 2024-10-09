@@ -6,6 +6,8 @@ Depth-First Search (DFS) is a fundamental graph traversal algorithm used in comp
 
 The key characteristic of DFS is its **"depth-first"** nature: it prioritizes exploring as far as possible along each branch before exploring other branches. This behavior is analogous to exploring a maze by following each path to its end before backtracking and trying a different path.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Urx87-NMm6c?si=lXpdEPPMjOMLHuQb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 # How DFS Works - Recursive & Iterative
 
 ## Recursive DFS

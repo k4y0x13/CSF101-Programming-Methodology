@@ -4,6 +4,8 @@
 
 Linear search, also known as **sequential search**, is one of the simplest searching algorithms. It works by sequentially checking each element in a collection until a match is found or the entire collection has been searched.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/19hcyQN8J7o?si=_EJnkgO8V6KJcVL6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 # 2. How Linear Search Works
 
 The algorithm follows these steps:

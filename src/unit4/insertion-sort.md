@@ -4,6 +4,8 @@
 
 Insertion sort is a simple sorting algorithm that builds the final sorted array one item at a time. It's much like sorting a hand of playing cards. You start with one card and then insert each subsequent card into its proper position among the cards you've already sorted.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JU767SDMDvA?si=W2kAnr5f4pfN6JzR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 # 2. How Does Insertion Sort Work
 
 Insertion sort works by virtually splitting the array into a sorted and an unsorted part. Values from the unsorted part are picked and placed in the correct position in the sorted part.

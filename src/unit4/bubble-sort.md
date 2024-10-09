@@ -5,6 +5,8 @@
 
 Bubble sort is a simple sorting algorithm that repeatedly steps through a list, compares adjacent elements, and swaps them if they are in the wrong order. The algorithm gets its name from the way smaller elements "bubble" to the top of the list with each iteration.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xli_FI7CuzA?si=ycw7yauzQ_UmVhVR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 # 2. How Does Bubble Sort Work
 
 Bubble sort works by repeatedly traversing the list from left to right, comparing adjacent elements, and swapping them if they are in the wrong order. This process is repeated for each element in the list until no more swaps are needed, which indicates that the list is sorted.

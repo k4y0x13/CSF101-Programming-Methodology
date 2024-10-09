@@ -4,6 +4,8 @@
 
 Binary search is a **highly efficient** searching algorithm used to find a specific element within a sorted array. It works on the principle of **divide and conquer**, repeatedly dividing the search interval in half until the desired element is found or it's determined that the element doesn't exist in the array.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SfxLtJyxaPg?si=hE8mOeyJq4BLobpt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 # 2. How Binary Search Works
 
 1. Start with a sorted array.

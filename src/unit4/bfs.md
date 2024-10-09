@@ -6,6 +6,8 @@ Breadth-First Search (BFS) is a fundamental graph traversal algorithm used in co
 
 The key characteristic of BFS is its "breadth-first" nature: it visits all the vertices at the same level before moving to the vertices at the next level. This behavior is analogous to how a ripple spreads out in a pond, reaching all points at a certain distance before moving further.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HZ5YTanv5QE?si=BEG28xQHfQOfGbMW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 # How BFS Works - Iterative
 
 BFS is typically implemented iteratively using a queue data structure. Here's how it works:
