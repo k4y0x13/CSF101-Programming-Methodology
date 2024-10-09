@@ -19,6 +19,12 @@ git config --global user.name "Your Name"
 git config --global user.email "your.email@example.com"
 ```
 
+## Creating a repository in GitHub
+
+[GitHub Tutorial Link](https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories)
+
+![Github Creating Repo](../assets/github_creating_repo.png)
+
 ## Basic Git Commands
 
 ### Initializing a Repository
@@ -202,8 +208,7 @@ This opens your editor to modify the commit message. If you've staged changes, t
 4. Pull changes from the remote repository before starting new work to avoid conflicts.
 5. Review your changes before committing: Use `git diff` to see what you've modified.
 
-## Conclusion
-
-This guide covers the basics of Git and working with GitHub. As you become more comfortable with these commands, you'll find Git to be an invaluable tool in your development workflow. Remember, practice is key to mastering Git, so don't be afraid to experiment in a test repository!
-
-For more advanced topics and detailed explanations, refer to the official [Git documentation](https://git-scm.com/doc).
+# Online Resources for Further Exploration:
+- [Learn Git Branching - Online Visual Game](https://learngitbranching.js.org/)
+- [Git Tutorial - Git Docs](https://git-scm.com/docs/gittutorial)
+- [Concepts of all the git commands - Git Kraken](https://www.gitkraken.com/learn/git)
