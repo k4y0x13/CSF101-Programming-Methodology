@@ -2,7 +2,7 @@
 
 [Introduction](./intro.md)
 
---- 
+---
 
 [Module Descriptor](./misc/module-descriptor.md)
 
@@ -128,12 +128,13 @@
    - [Practical Worksheets]()
       - [Worksheet1](./OOP/Worksheet1.md)
       - [Worksheet2](./OOP/Worksheet2.md)
-  
 
 ---
 
 [Practical Assignment I](./practical_assignments/cap1.md)
 [Practical Assignment II](./practical_assignments/cap2.md)
+[Quiz Output Exercise](./practical_assignments/quiz-1.md)
+[Quiz Time-Space Exercise](./practical_assignments/quiz-2.md)
 
 ---
 [GitHub Repo Structure](./practical_works/repo_structure.md)
