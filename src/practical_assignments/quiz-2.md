@@ -1,8 +1,4 @@
-# Quiz Time-Space Exercise
-
-# Time and Space Complexity Practice Questions for Beginner Python Programmers
-
-This document contains 33 practice questions to help you understand time and space complexity in Python. For each question, you'll see a Python code snippet. Try to determine the time and space complexity before revealing the answer and explanation.
+# Quiz: Time-Space Exercise
 
 ## Question 1
 
