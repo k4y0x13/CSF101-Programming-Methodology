@@ -1,4 +1,4 @@
-# Quiz Output Exercise
+# Quiz: Output Exercise
 
 ## Instructions
 1. Read the code snippet carefully.
