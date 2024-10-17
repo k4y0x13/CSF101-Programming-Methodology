@@ -137,7 +137,7 @@
 [Quiz Time-Space Exercise](./practical_assignments/quiz-2.md)
 
 ---
-[GitHub Repo Structure](./practical_works/repo_structure.md)
+<!--[GitHub Repo Structure](./practical_works/repo_structure.md)-->
 [Practical_Work Submission Guideline](./practical_works/pw_guideline.md)
 [Practical Work I](./practical_works/pw1.md)
 [Practical Work II](./practical_works/pw2.md)

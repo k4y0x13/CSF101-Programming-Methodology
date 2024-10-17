@@ -1,288 +1,189 @@
-# Practical Work VI
-
 # Practical 6: Singly Linked List Implementation
-**Due Date:** [Specify date]
-**Submission:** GitHub repository link containing:
-- Python source code (.py file)
-- Lab report in markdown format
-- Test cases file
 
-## Learning Objectives
-- Understand linked list data structure concepts
-- Implement basic linked list operations
-- Practice object-oriented programming
-- Learn list manipulation techniques
-- Develop debugging skills
+## Objective
+In this lab, you will implement a singly linked list data structure in Python. You'll create basic operations and list manipulation functions, gaining a deeper understanding of linked data structures and their operations.
 
-## Requirements
-Create a Python program that implements a singly linked list with the following operations:
-1. Insert node at beginning
-2. Insert node at end
-3. Insert node at specific position
-4. Delete node from beginning
-5. Delete node from end
-6. Delete node from specific position
-7. Search for a value
-8. Display the list
-9. Count total nodes
-10. Reverse the list
+## Prerequisites
+- Basic knowledge of Python syntax
+- Understanding of classes and object-oriented programming in Python
+- Familiarity with data structures concepts
 
-## Step-by-Step Implementation Guide
+## Lab Steps
 
-### Step 1: Create Node Class
-1. Create a new Python file named `linked_list.py`
-2. Implement the Node class:
+### Step 1: Define the Node Class
+
+First, let's create a `Node` class to represent individual elements in our linked list:
+
 ```python
 class Node:
     def __init__(self, data):
-        self.data = data    # Store the data
-        self.next = None    # Initialize next pointer as null
+        self.data = data
+        self.next = None
 ```
 
-### Step 2: Create LinkedList Class
-1. Implement the basic LinkedList class:
+### Step 2: Create the LinkedList Class
+
+Now, let's create the `LinkedList` class with a constructor:
+
 ```python
 class LinkedList:
     def __init__(self):
-        self.head = None    # Initialize head as null
-```
-
-### Step 3: Display Function
-1. Implement list display functionality:
-```python
-def display(self):
-    if self.head is None:
-        print("List is empty")
-        return
-        
-    current = self.head
-    while current is not None:
-        print(current.data, end=" -> ")
-        current = current.next
-    print("None")
-```
-
-### Step 4: Insert at Beginning
-1. Implement insertion at the start of list:
-```python
-def insert_at_beginning(self, data):
-    new_node = Node(data)
-    new_node.next = self.head
-    self.head = new_node
-```
-
-### Step 5: Insert at End
-1. Implement insertion at the end of list:
-```python
-def insert_at_end(self, data):
-    new_node = Node(data)
-    
-    if self.head is None:
-        self.head = new_node
-        return
-        
-    current = self.head
-    while current.next is not None:
-        current = current.next
-    current.next = new_node
-```
-
-### Step 6: Insert at Position
-1. Implement insertion at specific position:
-```python
-def insert_at_position(self, position, data):
-    if position < 0:
-        print("Invalid position")
-        return
-        
-    if position == 0:
-        self.insert_at_beginning(data)
-        return
-        
-    new_node = Node(data)
-    current = self.head
-    for i in range(position - 1):
-        if current is None:
-            print("Position out of range")
-            return
-        current = current.next
-        
-    new_node.next = current.next
-    current.next = new_node
-```
-
-### Step 7: Delete from Beginning
-1. Implement deletion from start:
-```python
-def delete_from_beginning(self):
-    if self.head is None:
-        print("List is empty")
-        return
-        
-    self.head = self.head.next
-```
-
-### Step 8: Delete from End
-1. Implement deletion from end:
-```python
-def delete_from_end(self):
-    if self.head is None:
-        print("List is empty")
-        return
-        
-    if self.head.next is None:
         self.head = None
-        return
-        
-    current = self.head
-    while current.next.next is not None:
-        current = current.next
-    current.next = None
 ```
 
-### Step 9: Search Function
-1. Implement search functionality:
+### Step 3: Implement the Append Method
+
+Let's add a method to append nodes to the end of the list:
+
 ```python
-def search(self, value):
-    current = self.head
-    position = 0
-    while current is not None:
-        if current.data == value:
-            return position
-        current = current.next
-        position += 1
-    return -1
+class LinkedList:
+    # ... (previous code)
+
+    def append(self, data):
+        new_node = Node(data)
+        if not self.head:
+            self.head = new_node
+            return
+        current = self.head
+        while current.next:
+            current = current.next
+        current.next = new_node
+
+# Test the append method
+ll = LinkedList()
+ll.append(1)
+ll.append(2)
+ll.append(3)
 ```
 
-### Step 10: Count Nodes
-1. Implement node counting:
+### Step 4: Implement the Display Method
+
+Now, let's add a method to display the list contents:
+
 ```python
-def count_nodes(self):
-    count = 0
-    current = self.head
-    while current is not None:
-        count += 1
-        current = current.next
-    return count
+class LinkedList:
+    # ... (previous code)
+
+    def display(self):
+        elements = []
+        current = self.head
+        while current:
+            elements.append(current.data)
+            current = current.next
+        print(" -> ".join(map(str, elements)))
+
+# Test the display method
+ll.display()  # Output: 1 -> 2 -> 3
 ```
 
-### Step 11: Reverse List
-1. Implement list reversal:
+### Step 5: Implement the Insert Method
+
+Let's add a method to insert a node at a specific position:
+
 ```python
-def reverse_list(self):
-    previous = None
-    current = self.head
-    while current is not None:
-        next_node = current.next
-        current.next = previous
-        previous = current
-        current = next_node
-    self.head = previous
+class LinkedList:
+    # ... (previous code)
+
+    def insert(self, data, position):
+        new_node = Node(data)
+        if position == 0:
+            new_node.next = self.head
+            self.head = new_node
+            return
+        current = self.head
+        for _ in range(position - 1):
+            if current is None:
+                raise IndexError("Position out of range")
+            current = current.next
+        new_node.next = current.next
+        current.next = new_node
+
+# Test the insert method
+ll.insert(4, 1)
+ll.display()  # Output: 1 -> 4 -> 2 -> 3
 ```
 
-### Step 12: Main Program
-1. Create a main program to test all operations:
+### Step 6: Implement the Delete Method
+
+Now, let's implement a method to delete a node by its value:
+
 ```python
-def main():
-    # Create a new linked list
-    my_list = LinkedList()
-    
-    while True:
-        print("\nLinked List Operations:")
-        print("1. Insert at beginning")
-        print("2. Insert at end")
-        print("3. Insert at position")
-        print("4. Delete from beginning")
-        print("5. Delete from end")
-        print("6. Search value")
-        print("7. Display list")
-        print("8. Count nodes")
-        print("9. Reverse list")
-        print("10. Exit")
-        
-        choice = input("Enter your choice (1-10): ")
-        
-        # Add appropriate if-elif statements for each choice
-        # Include error handling for user inputs
+class LinkedList:
+    # ... (previous code)
 
-if __name__ == "__main__":
-    main()
+    def delete(self, data):
+        if not self.head:
+            return
+        if self.head.data == data:
+            self.head = self.head.next
+            return
+        current = self.head
+        while current.next:
+            if current.next.data == data:
+                current.next = current.next.next
+                return
+            current = current.next
+
+# Test the delete method
+ll.delete(2)
+ll.display()  # Output: 1 -> 4 -> 3
 ```
 
-## Testing Instructions
-1. Test each operation individually:
-   - Create an empty list
-   - Insert several elements
-   - Try all deletion operations
-   - Search for existing and non-existing values
-   - Test boundary conditions (empty list, single node)
+### Step 7: Implement the Search Method
 
-2. Test Cases to Cover:
-   - Empty list operations
-   - Single node operations
-   - Multiple node operations
-   - Invalid inputs
-   - Boundary conditions
+Let's add a method to search for a value in the list:
 
-## Expected Output Format
-```
-Linked List Operations:
-1. Insert at beginning
-2. Insert at end
-3. Insert at position
-4. Delete from beginning
-5. Delete from end
-6. Search value
-7. Display list
-8. Count nodes
-9. Reverse list
-10. Exit
+```python
+class LinkedList:
+    # ... (previous code)
 
-Current List: 10 -> 20 -> 30 -> 40 -> None
-Number of nodes: 4
+    def search(self, data):
+        current = self.head
+        position = 0
+        while current:
+            if current.data == data:
+                return position
+            current = current.next
+            position += 1
+        return -1
+
+# Test the search method
+print(ll.search(4))  # Output: 1
+print(ll.search(5))  # Output: -1
 ```
 
-## Grading Criteria Breakdown
-### Executability (3 points)
-- Program runs without errors (1.5)
-- All operations work correctly (1.5)
+### Step 8: Implement the Reverse Method
 
-### Instruction Compliance (2 points)
-- All required functions implemented (1)
-- Proper code structure and documentation (1)
+Finally, let's add a method to reverse the linked list:
 
-### Solution Approach (2 points)
-- Efficient implementation (1)
-- Proper error handling (1)
+```python
+class LinkedList:
+    # ... (previous code)
 
-### Data Structure Usage (2 points)
-- Correct linked list implementation (1)
-- Proper node connections and updates (1)
+    def reverse(self):
+        prev = None
+        current = self.head
+        while current:
+            next_node = current.next
+            current.next = prev
+            prev = current
+            current = next_node
+        self.head = prev
 
-### Submission Timeliness (1 point)
-- Submitted before deadline on GitHub (1)
+# Test the reverse method
+ll.reverse()
+ll.display()  # Output: 3 -> 4 -> 1
+```
 
-## Submission Requirements
-1. In your `ProgrammingPracticals` repository, create a folder named `Practical7`
-2. Submit the following files:
-   - `linked_list.py`
-   - `test_cases.py` (containing test scenarios)
-   - `lab_report.md`
-3. Update README.md with:
-   - Implementation details
-   - Usage instructions
-   - Test case descriptions
+## Exercises for Students
 
-## Lab Report Template
-Your lab report should include:
-1. Introduction to linked lists
-2. Implementation approach
-3. Challenges faced and solutions
-4. Test cases and results
-5. Conclusions and learning outcomes
+1. Implement a method to find the middle element of the linked list.
+2. Create a method to detect if the linked list has a cycle.
+3. Implement a method to remove duplicates from an unsorted linked list.
+4. Add a method to merge two sorted linked lists into a single sorted linked list.
 
-## Additional Resources
-- Python object-oriented programming
-- Linked list visualization tools
-- Common linked list interview questions
-- Time complexity analysis of operations
+## Conclusion
+
+In this lab, you've implemented a singly linked list in Python with various operations such as append, insert, delete, search, and reverse. You've practiced working with linked data structures and manipulating pointers.
+
+Remember to test your implementation thoroughly with different scenarios to ensure it works correctly. Understanding linked lists is crucial for grasping more complex data structures and algorithms.

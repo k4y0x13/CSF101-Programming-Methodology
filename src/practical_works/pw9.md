@@ -1,248 +1,166 @@
-# Practical Work IX
+# Practical 9: Graph Data Structure and Traversal Algorithms
 
-# Practical 9: Graph Implementation and Traversal
-**Due Date:** [Specify date]
-**Submission:** GitHub repository link containing:
-- Python source code (.py file)
-- Lab report in markdown format
-- Test cases documentation
+## Objective
+In this lab, you will implement a graph data structure and basic graph traversal algorithms in Python. This exercise will help you understand graph representations and practice implementing depth-first search (DFS) and breadth-first search (BFS) algorithms.
 
-## Learning Objectives
-- Understand graph data structure concepts
-- Implement an adjacency list representation
-- Master basic graph traversal algorithms (BFS and DFS)
-- Practice using dictionaries and lists in Python
-- Learn queue and stack usage in graph traversal
+## Prerequisites
+- Basic knowledge of Python syntax
+- Understanding of data structures (particularly dictionaries)
+- Familiarity with object-oriented programming in Python
 
-## Requirements
-Create a Python program that:
-1. Implements a graph using adjacency list
-2. Provides methods to add vertices and edges
-3. Implements Depth-First Search (DFS)
-4. Implements Breadth-First Search (BFS)
-5. Allows for testing with different graph configurations
+## Lab Steps
 
-## Step-by-Step Implementation Guide
+### Step 1: Implement the Graph Class
 
-### Step 1: Basic Graph Class
-1. Create a new Python file named `graph.py`
-2. Implement the basic Graph class using a dictionary for the adjacency list:
+First, let's create a Graph class using an adjacency list representation:
 
 ```python
 class Graph:
     def __init__(self):
-        # Initialize an empty dictionary to store the graph
         self.graph = {}
     
     def add_vertex(self, vertex):
-        # Add a vertex if it's not already in the graph
         if vertex not in self.graph:
             self.graph[vertex] = []
     
     def add_edge(self, vertex1, vertex2):
-        # Add edge from vertex1 to vertex2
-        if vertex1 in self.graph:
-            if vertex2 not in self.graph[vertex1]:
-                self.graph[vertex1].append(vertex2)
-        else:
-            self.graph[vertex1] = [vertex2]
-        
-        # Add vertices if they don't exist
-        if vertex2 not in self.graph:
-            self.graph[vertex2] = []
+        self.add_vertex(vertex1)
+        self.add_vertex(vertex2)
+        self.graph[vertex1].append(vertex2)
+        self.graph[vertex2].append(vertex1)  # For undirected graph
     
-    def display(self):
-        # Display the adjacency list
+    def print_graph(self):
         for vertex in self.graph:
-            print(f"{vertex}: {self.graph[vertex]}")
+            print(f"{vertex}: {' '.join(map(str, self.graph[vertex]))}")
+
+# Test the Graph class
+g = Graph()
+g.add_edge(0, 1)
+g.add_edge(0, 2)
+g.add_edge(1, 2)
+g.add_edge(2, 3)
+g.print_graph()
 ```
 
-### Step 2: Depth-First Search Implementation
-1. Add the DFS method to the Graph class:
+### Step 2: Implement Depth-First Search (DFS)
+
+Now, let's implement the DFS algorithm:
 
 ```python
-def dfs(self, start_vertex):
-    # Set to keep track of visited vertices
-    visited = set()
-    # List to store the traversal order
-    traversal = []
+class Graph:
+    # ... (previous methods remain the same)
+
+    def dfs(self, start_vertex):
+        visited = set()
+        self._dfs_recursive(start_vertex, visited)
     
-    def dfs_helper(vertex):
-        # Mark vertex as visited
+    def _dfs_recursive(self, vertex, visited):
         visited.add(vertex)
-        # Add to traversal list
-        traversal.append(vertex)
+        print(vertex, end=' ')
         
-        # Visit all adjacent vertices
         for neighbor in self.graph[vertex]:
             if neighbor not in visited:
-                dfs_helper(neighbor)
-    
-    # Start DFS from the start vertex
-    dfs_helper(start_vertex)
-    return traversal
+                self._dfs_recursive(neighbor, visited)
+
+# Test DFS
+print("\nDFS starting from vertex 0:")
+g.dfs(0)
 ```
 
-### Step 3: Breadth-First Search Implementation
-1. Import the queue module
-2. Add the BFS method to the Graph class:
+### Step 3: Implement Breadth-First Search (BFS)
+
+Next, let's implement the BFS algorithm:
 
 ```python
 from collections import deque
 
-def bfs(self, start_vertex):
-    # Set to keep track of visited vertices
-    visited = set()
-    # Queue for BFS
-    queue = deque([start_vertex])
-    # List to store the traversal order
-    traversal = []
-    
-    # Start with the start_vertex
-    visited.add(start_vertex)
-    
-    while queue:
-        # Remove and return first vertex from queue
-        vertex = queue.popleft()
-        traversal.append(vertex)
-        
-        # Add all unvisited neighbors to queue
-        for neighbor in self.graph[vertex]:
-            if neighbor not in visited:
-                visited.add(neighbor)
-                queue.append(neighbor)
-    
-    return traversal
+class Graph:
+    # ... (previous methods remain the same)
+
+    def bfs(self, start_vertex):
+        visited = set()
+        queue = deque([start_vertex])
+        visited.add(start_vertex)
+
+        while queue:
+            vertex = queue.popleft()
+            print(vertex, end=' ')
+
+            for neighbor in self.graph[vertex]:
+                if neighbor not in visited:
+                    visited.add(neighbor)
+                    queue.append(neighbor)
+
+# Test BFS
+print("\nBFS starting from vertex 0:")
+g.bfs(0)
 ```
 
-### Step 4: Main Program and Testing
-1. Create a main section to test the graph:
+### Step 4: Implement a Method to Find All Paths
+
+Let's add a method to find all paths between two vertices:
 
 ```python
-def main():
-    # Create a new graph
-    g = Graph()
-    
-    # Add vertices
-    vertices = ['A', 'B', 'C', 'D', 'E']
-    for vertex in vertices:
-        g.add_vertex(vertex)
-    
-    # Add edges to create a sample graph
-    edges = [
-        ('A', 'B'), ('A', 'C'),
-        ('B', 'D'), ('C', 'D'),
-        ('D', 'E')
-    ]
-    for v1, v2 in edges:
-        g.add_edge(v1, v2)
-    
-    # Display the graph
-    print("Graph Adjacency List:")
-    g.display()
-    
-    # Test DFS
-    print("\nDFS starting from vertex 'A':")
-    print(g.dfs('A'))
-    
-    # Test BFS
-    print("\nBFS starting from vertex 'A':")
-    print(g.bfs('A'))
+class Graph:
+    # ... (previous methods remain the same)
 
-if __name__ == "__main__":
-    main()
+    def find_all_paths(self, start_vertex, end_vertex, path=[]):
+        path = path + [start_vertex]
+        if start_vertex == end_vertex:
+            return [path]
+        if start_vertex not in self.graph:
+            return []
+        paths = []
+        for neighbor in self.graph[start_vertex]:
+            if neighbor not in path:
+                new_paths = self.find_all_paths(neighbor, end_vertex, path)
+                for new_path in new_paths:
+                    paths.append(new_path)
+        return paths
+
+# Test finding all paths
+print("\nAll paths from vertex 0 to vertex 3:")
+all_paths = g.find_all_paths(0, 3)
+for path in all_paths:
+    print(' -> '.join(map(str, path)))
 ```
 
-## Testing Instructions
-1. Create test cases with different graph configurations:
-   - Small graph (5-6 vertices)
-   - Medium graph (10-12 vertices)
-   - Disconnected graph
-   - Cyclic graph
+### Step 5: Implement a Method to Check if the Graph is Connected
 
-2. Test each graph with both DFS and BFS from different starting vertices
+Finally, let's add a method to check if the graph is connected:
 
-### Sample Test Cases
 ```python
-def test_cases():
-    g = Graph()
-    
-    # Test Case 1: Simple linear graph
-    print("Test Case 1: Linear Graph")
-    vertices = [1, 2, 3, 4, 5]
-    edges = [(1,2), (2,3), (3,4), (4,5)]
-    
-    for v in vertices:
-        g.add_vertex(v)
-    for v1, v2 in edges:
-        g.add_edge(v1, v2)
-    
-    print("DFS:", g.dfs(1))
-    print("BFS:", g.bfs(1))
-    
-    # Test Case 2: Cyclic graph
-    # Add more test cases here...
+class Graph:
+    # ... (previous methods remain the same)
+
+    def is_connected(self):
+        if not self.graph:
+            return True
+        start_vertex = next(iter(self.graph))
+        visited = set()
+        self._dfs_recursive(start_vertex, visited)
+        return len(visited) == len(self.graph)
+
+# Test if the graph is connected
+print("\nIs the graph connected?", g.is_connected())
+
+# Add a disconnected vertex and test again
+g.add_vertex(4)
+print("After adding a disconnected vertex:")
+print("Is the graph connected?", g.is_connected())
 ```
 
-## Expected Output Format
-```
-Graph Adjacency List:
-A: ['B', 'C']
-B: ['D']
-C: ['D']
-D: ['E']
-E: []
+## Exercises for Students
 
-DFS starting from vertex 'A':
-['A', 'B', 'D', 'E', 'C']
+1. Implement a method to find the shortest path between two vertices using BFS.
+2. Add a method to detect cycles in the graph.
+3. Implement Dijkstra's algorithm to find the shortest path in a weighted graph.
+4. Create a method to determine if the graph is bipartite.
 
-BFS starting from vertex 'A':
-['A', 'B', 'C', 'D', 'E']
-```
+## Conclusion
 
-## Grading Criteria Breakdown
-### Executability (3 points)
-- Program runs without errors (1.5)
-- All traversal algorithms work correctly (1.5)
+In this lab, you've implemented a graph data structure and basic graph traversal algorithms in Python. You've practiced creating a Graph class, implementing DFS and BFS, finding all paths between two vertices, and checking if a graph is connected.
 
-### Instruction Compliance (2 points)
-- All required methods implemented (1)
-- Proper file structure and naming (1)
+These fundamental graph algorithms form the basis for solving many complex problems in computer science. As you work on the additional exercises, you'll gain a deeper understanding of graph theory and its applications.
 
-### Solution Approach (2 points)
-- Correct implementation of graph structure (1)
-- Proper implementation of traversal algorithms (1)
-
-### Data Structure Usage (2 points)
-- Appropriate use of adjacency list (1)
-- Efficient use of auxiliary data structures (1)
-
-### Submission Timeliness (1 point)
-- Submitted before deadline on GitHub (1)
-
-## Submission Requirements
-1. In your `ProgrammingPracticals` repository:
-   - `graph.py`
-   - `lab_report.md`
-   - `test_cases.py` (optional but recommended)
-2. README.md with:
-   - Student information
-   - Installation instructions
-   - Usage examples
-   - Sample output screenshots
-
-## Lab Report Template
-Your lab report should include:
-1. Introduction to graphs and traversal algorithms
-2. Implementation approach and decisions
-3. Challenges faced during implementation
-4. Test cases and their results
-5. Comparative analysis of DFS vs BFS
-6. Conclusions and learning outcomes
-
-## Additional Resources
-- Graph theory basics
-- Python dictionary operations
-- Queue and Stack in Python
-- Recursive vs Iterative approaches
-- Time complexity analysis of graph traversals
+Remember to test your code with different graph structures to ensure it works correctly in various scenarios.

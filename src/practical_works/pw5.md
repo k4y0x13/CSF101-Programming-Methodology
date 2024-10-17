@@ -1,315 +1,171 @@
-# Practical Work V
+# Practical 5: Implementing Stacks and Queues
 
-# Practical 5: Stack and Queue Data Structures
-**Due Date:** [Specify date]
-**Submission:** GitHub repository link containing:
-- Python source code (.py files)
-- Lab report in markdown format
-- Test cases and results
+## Objective
+In this lab, you will implement stack and queue data structures in Python and use them to solve practical problems. This exercise will help you understand these fundamental data structures and their applications.
 
-## Learning Objectives
-- Understand stack and queue data structures
-- Implement basic operations for both structures
-- Apply these structures to solve practical problems
-- Practice object-oriented programming concepts
+## Prerequisites
+- Basic knowledge of Python syntax
+- Understanding of lists in Python
+- Familiarity with classes in Python (optional, but helpful)
 
-## Requirements
-Create Python programs that:
-1. Implement a Stack class with basic operations
-2. Implement a Queue class with basic operations
-3. Solve two practical problems:
-   - Use Stack to check balanced parentheses in an expression
-   - Use Queue to simulate a print job scheduler
+## Lab Steps
 
-## Step-by-Step Implementation Guide
+### Part 1: Implementing a Stack
 
-### Part 1: Stack Implementation
+A stack is a Last-In-First-Out (LIFO) data structure. Let's implement a basic stack class:
 
-#### Step 1: Create Basic Stack Class
-1. Create a new file named `stack.py`
-2. Implement the basic Stack class:
 ```python
 class Stack:
     def __init__(self):
         self.items = []
-    
+
     def is_empty(self):
         return len(self.items) == 0
-    
-    def size(self):
-        return len(self.items)
-```
 
-#### Step 2: Add Stack Operations
-1. Add push operation:
-```python
     def push(self, item):
         self.items.append(item)
-        print(f"Pushed {item} to stack")
-```
 
-2. Add pop operation:
-```python
     def pop(self):
         if not self.is_empty():
             return self.items.pop()
         else:
-            print("Stack is empty")
-            return None
-```
+            raise IndexError("Stack is empty")
 
-3. Add peek operation:
-```python
     def peek(self):
         if not self.is_empty():
             return self.items[-1]
         else:
-            print("Stack is empty")
-            return None
+            raise IndexError("Stack is empty")
+
+    def size(self):
+        return len(self.items)
+
+# Test the Stack
+stack = Stack()
+stack.push(1)
+stack.push(2)
+stack.push(3)
+print(stack.pop())  # Should print 3
+print(stack.peek())  # Should print 2
+print(stack.size())  # Should print 2
 ```
 
-#### Step 3: Create Stack Test Program
-1. Create test cases in `stack_test.py`:
-```python
-from stack import Stack
+### Part 2: Implementing a Queue
 
-def test_stack():
-    stack = Stack()
-    
-    # Test push operation
-    stack.push(1)
-    stack.push(2)
-    stack.push(3)
-    
-    # Test peek operation
-    print(f"Top item: {stack.peek()}")
-    
-    # Test pop operation
-    print(f"Popped item: {stack.pop()}")
-    print(f"New size: {stack.size()}")
+A queue is a First-In-First-Out (FIFO) data structure. Let's implement a basic queue class:
 
-if __name__ == "__main__":
-    test_stack()
-```
-
-### Part 2: Queue Implementation
-
-#### Step 1: Create Basic Queue Class
-1. Create a new file named `queue.py`
-2. Implement the basic Queue class:
 ```python
 class Queue:
     def __init__(self):
         self.items = []
-    
+
     def is_empty(self):
         return len(self.items) == 0
-    
-    def size(self):
-        return len(self.items)
-```
 
-#### Step 2: Add Queue Operations
-1. Add enqueue operation:
-```python
     def enqueue(self, item):
         self.items.append(item)
-        print(f"Enqueued {item} to queue")
-```
 
-2. Add dequeue operation:
-```python
     def dequeue(self):
         if not self.is_empty():
             return self.items.pop(0)
         else:
-            print("Queue is empty")
-            return None
-```
+            raise IndexError("Queue is empty")
 
-3. Add front operation:
-```python
     def front(self):
         if not self.is_empty():
             return self.items[0]
         else:
-            print("Queue is empty")
-            return None
+            raise IndexError("Queue is empty")
+
+    def size(self):
+        return len(self.items)
+
+# Test the Queue
+queue = Queue()
+queue.enqueue(1)
+queue.enqueue(2)
+queue.enqueue(3)
+print(queue.dequeue())  # Should print 1
+print(queue.front())  # Should print 2
+print(queue.size())  # Should print 2
 ```
 
-#### Step 3: Create Queue Test Program
-1. Create test cases in `queue_test.py`:
+### Part 3: Solving Practical Problems
+
+Now that we have implemented our stack and queue, let's use them to solve some practical problems.
+
+#### Problem 1: Balanced Parentheses
+
+Use a stack to check if a string of parentheses is balanced:
+
 ```python
-from queue import Queue
-
-def test_queue():
-    queue = Queue()
-    
-    # Test enqueue operation
-    queue.enqueue("Task 1")
-    queue.enqueue("Task 2")
-    queue.enqueue("Task 3")
-    
-    # Test front operation
-    print(f"Front item: {queue.front()}")
-    
-    # Test dequeue operation
-    print(f"Dequeued item: {queue.dequeue()}")
-    print(f"New size: {queue.size()}")
-
-if __name__ == "__main__":
-    test_queue()
-```
-
-### Part 3: Practical Applications
-
-#### Application 1: Balanced Parentheses Checker
-1. Create `parentheses_checker.py`:
-```python
-from stack import Stack
-
-def check_balanced_parentheses(expression):
+def is_balanced(parentheses):
     stack = Stack()
-    
-    for char in expression:
-        if char == '(':
-            stack.push(char)
-        elif char == ')':
+    for p in parentheses:
+        if p == '(':
+            stack.push(p)
+        elif p == ')':
             if stack.is_empty():
                 return False
             stack.pop()
-    
     return stack.is_empty()
 
 # Test the function
-expressions = [
-    "(())",
-    "(()",
-    "())",
-    "(()())",
-]
-
-for expr in expressions:
-    result = check_balanced_parentheses(expr)
-    print(f"Expression {expr} is {'balanced' if result else 'not balanced'}")
+print(is_balanced("((()))"))  # Should print True
+print(is_balanced("(()"))  # Should print False
 ```
 
-#### Application 2: Print Job Scheduler
-1. Create `print_scheduler.py`:
+#### Problem 2: Reverse a String
+
+Use a stack to reverse a string:
+
 ```python
-from queue import Queue
-import time
-
-class PrintJob:
-    def __init__(self, document_name, num_pages):
-        self.document_name = document_name
-        self.num_pages = num_pages
-
-class PrinterScheduler:
-    def __init__(self):
-        self.print_queue = Queue()
+def reverse_string(s):
+    stack = Stack()
+    for char in s:
+        stack.push(char)
     
-    def add_print_job(self, document_name, num_pages):
-        job = PrintJob(document_name, num_pages)
-        self.print_queue.enqueue(job)
-        print(f"Added print job: {document_name}")
+    reversed_string = ""
+    while not stack.is_empty():
+        reversed_string += stack.pop()
     
-    def process_print_jobs(self):
-        while not self.print_queue.is_empty():
-            job = self.print_queue.dequeue()
-            print(f"Printing {job.document_name}")
-            print(f"Pages to print: {job.num_pages}")
-            # Simulate printing time
-            time.sleep(1)
-            print(f"Finished printing {job.document_name}")
+    return reversed_string
 
-# Test the printer scheduler
-scheduler = PrinterScheduler()
-scheduler.add_print_job("Document1.pdf", 5)
-scheduler.add_print_job("Document2.pdf", 3)
-scheduler.add_print_job("Document3.pdf", 7)
-scheduler.process_print_jobs()
+# Test the function
+print(reverse_string("Hello, World!"))  # Should print "!dlroW ,olleH"
 ```
 
-## Testing Instructions
-1. Test Stack Implementation:
-   - Run `stack_test.py`
-   - Verify all stack operations work correctly
-   - Test edge cases (empty stack, full stack)
+#### Problem 3: Hot Potato Simulation
 
-2. Test Queue Implementation:
-   - Run `queue_test.py`
-   - Verify all queue operations work correctly
-   - Test edge cases (empty queue, full queue)
+Use a queue to simulate the Hot Potato game:
 
-3. Test Practical Applications:
-   - Run `parentheses_checker.py` with different expressions
-   - Run `print_scheduler.py` with various print jobs
+```python
+def hot_potato(names, num):
+    queue = Queue()
+    for name in names:
+        queue.enqueue(name)
+    
+    while queue.size() > 1:
+        for _ in range(num):
+            queue.enqueue(queue.dequeue())
+        queue.dequeue()
+    
+    return queue.dequeue()
 
-## Expected Output Format
-### Stack Operations
-```
-Pushed 1 to stack
-Pushed 2 to stack
-Pushed 3 to stack
-Top item: 3
-Popped item: 3
-New size: 2
+# Test the function
+names = ["Bill", "David", "Susan", "Jane", "Kent", "Brad"]
+print(hot_potato(names, 7))  # The winner's name will be printed
 ```
 
-### Queue Operations
-```
-Enqueued Task 1 to queue
-Enqueued Task 2 to queue
-Enqueued Task 3 to queue
-Front item: Task 1
-Dequeued item: Task 1
-New size: 2
-```
+## Exercises for Students
 
-## Grading Criteria Breakdown
-### Executability (3 points)
-- Stack implementation works correctly (1)
-- Queue implementation works correctly (1)
-- Practical applications run without errors (1)
+1. Implement a function that uses a stack to evaluate postfix expressions.
+2. Create a function that uses two stacks to implement a queue.
+3. Use a queue to implement a basic task scheduler that processes tasks in the order they were added.
+4. Implement a function that uses a stack to convert infix expressions to postfix.
 
-### Instruction Compliance (2 points)
-- All required classes and methods implemented (1)
-- Proper file structure and naming conventions (1)
+## Conclusion
 
-### Solution Approach (2 points)
-- Efficient implementation of data structures (1)
-- Proper error handling (1)
+In this lab, you've implemented stack and queue data structures in Python and used them to solve practical problems. These fundamental data structures are crucial in computer science and are used in various applications, from algorithm implementation to system design.
 
-### Data Structure Usage (2 points)
-- Correct implementation of stack and queue operations (1)
-- Appropriate use in practical applications (1)
-
-### Submission Timeliness (1 point)
-- Submitted before deadline on GitHub (1)
-
-## Submission Requirements
-1. In your `ProgrammingPracticals` repository, create a folder named `Practical5`
-2. Submit the following files:
-   - `stack.py`
-   - `queue.py`
-   - `stack_test.py`
-   - `queue_test.py`
-   - `parentheses_checker.py`
-   - `print_scheduler.py`
-   - `lab_report.md`
-
-## Lab Report Template
-Your lab report should include:
-1. Introduction to stacks and queues
-2. Implementation approach for each data structure
-3. Explanation of practical applications
-4. Test cases and results
-5. Challenges faced and solutions
-6. Conclusions and learning outcomes
-
-## Additional Resources
-- Python list operations
-- Time complexity of operations
-- Object-oriented programming in Python
-- Real-world applications of stacks and queues
+Remember to test your code with different inputs to ensure it works correctly in various scenarios. As you progress, try to think of other real-world problems that could be solved using stacks and queues.

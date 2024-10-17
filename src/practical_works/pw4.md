@@ -1,163 +1,152 @@
-# Practical Work IV
-
-# Practical 4: Search Algorithms
-**Due Date:** 
+# Practical 4: Implementing Linear and Binary Search Algorithms
 
 ## Objective
-Create a program that implements both linear and binary search algorithms to find numbers in a list.
+In this lab, you will implement both linear and binary search algorithms in Python. You'll learn about the differences between these search methods, their time complexities, and when to use each one. This exercise will help you practice algorithm implementation, list manipulation, and control structures in Python.
 
-## Step-by-Step Implementation
+## Prerequisites
+- Basic knowledge of Python syntax
+- Understanding of lists and functions in Python
+- Familiarity with control structures (if statements, loops)
 
-### Step 1: Create Basic Program Structure
-Create a new file named `search_algorithms.py` and set up the basic structure:
+## Lab Steps
+
+### Step 1: Implement Linear Search
+
+Let's start by implementing the linear search algorithm:
 
 ```python
-def main():
-    # Our test list
-    numbers = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
-    
-    # Value we want to find
-    target = 7
-    
-    print("List of numbers:", numbers)
-    print("We want to find:", target)
+def linear_search(arr, target):
+    for i in range(len(arr)):
+        if arr[i] == target:
+            return i  # Return the index if the target is found
+    return -1  # Return -1 if the target is not in the list
 
-if __name__ == "__main__":
-    main()
+# Test the function
+test_list = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
+result = linear_search(test_list, 6)
+print(f"Linear Search: Index of 6 is {result}")
 ```
 
-Run this code to make sure it works. It should print the list and target number.
+### Step 2: Implement Binary Search
 
-### Step 2: Implement Linear Search
-Add the linear search function:
-
-```python
-def linear_search(numbers, target):
-    for i in range(len(numbers)):
-        if numbers[i] == target:
-            return i    # Return position if found
-    return -1          # Return -1 if not found
-
-def main():
-    numbers = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
-    target = 7
-    
-    print("List of numbers:", numbers)
-    print("We want to find:", target)
-    
-    # Try linear search
-    result = linear_search(numbers, target)
-    if result != -1:
-        print(f"Linear Search: Found {target} at position {result}")
-    else:
-        print(f"Linear Search: {target} not found in the list")
-
-if __name__ == "__main__":
-    main()
-```
-
-Test this code. It should find and print the position of the target number.
-
-### Step 3: Implement Binary Search
-Add the binary search function:
+Now, let's implement the binary search algorithm. Remember, binary search requires a sorted list:
 
 ```python
-def binary_search(numbers, target):
-    left = 0
-    right = len(numbers) - 1
+def binary_search(arr, target):
+    left, right = 0, len(arr) - 1
     
     while left <= right:
-        middle = (left + right) // 2
-        
-        # If we found the number
-        if numbers[middle] == target:
-            return middle
-        
-        # If target is smaller, ignore right half
-        elif numbers[middle] > target:
-            right = middle - 1
-        
-        # If target is larger, ignore left half
+        mid = (left + right) // 2
+        if arr[mid] == target:
+            return mid  # Return the index if the target is found
+        elif arr[mid] < target:
+            left = mid + 1
         else:
-            left = middle + 1
-            
-    return -1    # Not found
-
-def main():
-    numbers = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
-    target = 7
+            right = mid - 1
     
-    print("List of numbers:", numbers)
-    print("We want to find:", target)
-    
-    # Try linear search
-    linear_result = linear_search(numbers, target)
-    if linear_result != -1:
-        print(f"Linear Search: Found {target} at position {linear_result}")
-    else:
-        print(f"Linear Search: {target} not found in the list")
-        
-    # Try binary search
-    binary_result = binary_search(numbers, target)
-    if binary_result != -1:
-        print(f"Binary Search: Found {target} at position {binary_result}")
-    else:
-        print(f"Binary Search: {target} not found in the list")
+    return -1  # Return -1 if the target is not in the list
 
-if __name__ == "__main__":
-    main()
+# Test the function
+test_list_sorted = sorted(test_list)
+result = binary_search(test_list_sorted, 6)
+print(f"Binary Search: Index of 6 in sorted list is {result}")
 ```
 
-### Step 4: Add User Input
-Modify the main function to accept user input:
+### Step 3: Compare Performance
+
+Let's create a function to compare the performance of both search algorithms:
+
+```python
+import time
+
+def compare_search_algorithms(arr, target):
+    # Linear Search
+    start_time = time.time()
+    linear_result = linear_search(arr, target)
+    linear_time = time.time() - start_time
+    
+    # Binary Search (on sorted array)
+    arr_sorted = sorted(arr)
+    start_time = time.time()
+    binary_result = binary_search(arr_sorted, target)
+    binary_time = time.time() - start_time
+    
+    print(f"Linear Search: Found at index {linear_result}, Time: {linear_time:.6f} seconds")
+    print(f"Binary Search: Found at index {binary_result}, Time: {binary_time:.6f} seconds")
+
+# Test with a larger list
+large_list = list(range(10000))
+compare_search_algorithms(large_list, 8888)
+```
+
+### Step 4: Implement Recursive Binary Search
+
+Let's also implement a recursive version of binary search:
+
+```python
+def binary_search_recursive(arr, target, left, right):
+    if left > right:
+        return -1
+    
+    mid = (left + right) // 2
+    if arr[mid] == target:
+        return mid
+    elif arr[mid] < target:
+        return binary_search_recursive(arr, target, mid + 1, right)
+    else:
+        return binary_search_recursive(arr, target, left, mid - 1)
+
+# Test the recursive function
+result = binary_search_recursive(test_list_sorted, 6, 0, len(test_list_sorted) - 1)
+print(f"Recursive Binary Search: Index of 6 in sorted list is {result}")
+```
+
+### Step 5: Create a Main Function
+
+Finally, let's create a main function that demonstrates all our search algorithms:
 
 ```python
 def main():
-    # Create our test list
-    numbers = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
+    # Create a list of 20 random integers between 1 and 100
+    import random
+    test_list = [random.randint(1, 100) for _ in range(20)]
     
-    while True:
-        # Show the menu
-        print("\nSearch Algorithms Test")
-        print("List of numbers:", numbers)
-        
-        # Get target number from user
-        try:
-            target = int(input("\nEnter a number to search for (or -1 to quit): "))
-            if target == -1:
-                break
-                
-            # Try linear search
-            linear_result = linear_search(numbers, target)
-            if linear_result != -1:
-                print(f"Linear Search: Found {target} at position {linear_result}")
-            else:
-                print(f"Linear Search: {target} not found in the list")
-                
-            # Try binary search
-            binary_result = binary_search(numbers, target)
-            if binary_result != -1:
-                print(f"Binary Search: Found {target} at position {binary_result}")
-            else:
-                print(f"Binary Search: {target} not found in the list")
-                
-        except ValueError:
-            print("Please enter a valid number")
+    print("Original list:", test_list)
+    print("Sorted list:", sorted(test_list))
+    
+    target = random.choice(test_list)  # Choose a random target from the list
+    print(f"\nSearching for: {target}")
+    
+    # Linear Search
+    result = linear_search(test_list, target)
+    print(f"Linear Search: Found at index {result}")
+    
+    # Binary Search (iterative)
+    sorted_list = sorted(test_list)
+    result = binary_search(sorted_list, target)
+    print(f"Binary Search (iterative): Found at index {result}")
+    
+    # Binary Search (recursive)
+    result = binary_search_recursive(sorted_list, target, 0, len(sorted_list) - 1)
+    print(f"Binary Search (recursive): Found at index {result}")
+    
+    # Compare performance
+    print("\nPerformance Comparison:")
+    compare_search_algorithms(list(range(100000)), 99999)
 
 if __name__ == "__main__":
     main()
 ```
 
-### Step 5: Test Your Program
-Test your program with these cases:
-1. Find number 7 (exists in list)
-2. Find number 10 (doesn't exist in list)
-3. Find number 1 (first element)
-4. Find number 19 (last element)
-5. Enter invalid input (like "abc")
+## Exercises for Students
 
-## Extra Challenge (Optional)
-If you want to try more:
-1. Add a feature to let users input their own list of numbers
-2. Add a counter to show how many comparisons each search method makes
-3. Add a timer to measure how long each search takes
+1. Modify the linear search function to return all indices where the target appears, not just the first one.
+2. Implement a function that uses binary search to find the insertion point for a target value in a sorted list.
+3. Create a function that counts the number of comparisons made in each search algorithm.
+4. Implement a jump search algorithm and compare its performance with linear and binary search.
+
+## Conclusion
+
+In this lab, you've implemented both linear and binary search algorithms in Python. You've learned about their differences, time complexities, and when to use each one. The modular approach we've taken allows for easy testing and comparison of these algorithms.
+
+Remember that while binary search is generally faster for large sorted lists, it requires the list to be sorted first. Linear search, although slower for large lists, works on unsorted lists and can be more efficient for small lists or when searching for multiple occurrences of an element.

@@ -1,100 +1,119 @@
-# Practical Work II
-
 # Practical 2: Text File Analyzer
 
-**Due Date:** 
+## Objective
+In this lab, you will create a Python program that analyzes a text file and calculates various statistics using control structures. This exercise will help you practice file handling, string manipulation, and using loops and conditionals in Python.
 
-**Submission:** GitHub repository link containing:
-- Python source code (.py file)
-- Lab report in markdown format
-- Sample text files used for testing
+## Prerequisites
+- Basic knowledge of Python syntax
+- Understanding of file operations in Python
+- Familiarity with control structures (if statements, loops)
 
-## Learning Objectives
-- Implement file handling operations in Python
-- Use control structures (loops and conditionals)
-- Practice string manipulation
-- Implement basic statistical calculations
-- Apply error handling techniques
+## Lab Steps
 
-## Requirements
-Create a Python program that analyzes a text file and calculates the following statistics:
-1. Total number of characters (including spaces and special characters)
-2. Total number of words
-3. Total number of lines
-4. Average word length
-5. Most frequent word
-6. Number of sentences
-7. Word frequency distribution (top 10 words)
+### Step 1: Open and Read a Text File
 
-## Step-by-Step Implementation Guide
+First, let's create a function to open and read a text file:
 
-### Step 1: File Input and Basic Structure
-1. Create a new Python file named `text_analyzer.py`
-2. Implement a function to read the text file:
-   ```python
-   def read_file(filename):
-       try:
-           with open(filename, 'r') as file:
-               return file.read()
-       except FileNotFoundError:
-           print(f"Error: File '{filename}' not found")
-           return None
-   ```
+```python
+def read_file(filename):
+    with open(filename, 'r') as file:
+        return file.read()
 
-### Step 2: Character Count Function
-1. Implement a function to count total characters:
-   ```python
-   def count_characters(text):
-       return len(text)
-   ```
-
-### Step 3: Word Count Function
-1. Create a function to count words:
-   ```python
-   def count_words(text):
-       words = text.split()
-       return len(words)
-   ```
-
-### Step 4: Line Count Function
-1. Implement line counting:
-   ```python
-   def count_lines(text):
-       lines = text.splitlines()
-       return len(lines)
-   ```
-
-### Step 5: Advanced Statistics
-1. Implement average word length calculation
-2. Create a function to find the most frequent word
-3. Add sentence counting functionality
-4. Implement word frequency distribution
-
-### Step 6: Main Program Structure
-1. Create the main program structure
-2. Display the statistics to the user
-
-## Testing Instructions
-1. Create at least three different text files for testing:
-   - A small file (< 100 words)
-   - A medium file (100-1000 words)
-   - A large file (> 1000 words)
-2. Test your program with each file
-3. Verify all statistics are calculated correctly
-
-## Expected Output Format
+# Test the function
+content = read_file('sample.txt')
+print(content[:100])  # Print the first 100 characters
 ```
-Text File Analysis Report
------------------------
-Filename: sample.txt
-Total Characters: XXX
-Total Words: XXX
-Total Lines: XXX
-Average Word Length: XX.XX
-Most Frequent Word: "XXXX" (XX occurrences)
-Number of Sentences: XX
-Top 10 Words:
-1. word1 (XX)
-2. word2 (XX)
-...
+
+### Step 2: Count the Number of Lines
+
+Now, let's count the number of lines in the file:
+
+```python
+def count_lines(content):
+    return len(content.split('\n'))
+
+# Test the function
+num_lines = count_lines(content)
+print(f"Number of lines: {num_lines}")
 ```
+
+### Step 3: Count Words
+
+Next, we'll count the total number of words in the file:
+
+```python
+def count_words(content):
+    return len(content.split())
+
+# Test the function
+num_words = count_words(content)
+print(f"Number of words: {num_words}")
+```
+
+### Step 4: Find the Most Common Word
+
+Let's find the most common word in the text:
+
+```python
+from collections import Counter
+
+def most_common_word(content):
+    words = content.lower().split()
+    word_counts = Counter(words)
+    return word_counts.most_common(1)[0]
+
+# Test the function
+common_word, count = most_common_word(content)
+print(f"Most common word: '{common_word}' (appears {count} times)")
+```
+
+### Step 5: Calculate Average Word Length
+
+Now, let's calculate the average word length:
+
+```python
+def average_word_length(content):
+    words = content.split()
+    total_length = sum(len(word) for word in words)
+    return total_length / len(words)
+
+# Test the function
+avg_length = average_word_length(content)
+print(f"Average word length: {avg_length:.2f} characters")
+```
+
+### Step 6: Combine Everything into a Main Function
+
+Finally, let's combine all these functions into a main function that analyzes the text file:
+
+```python
+def analyze_text(filename):
+    content = read_file(filename)
+    
+    num_lines = count_lines(content)
+    num_words = count_words(content)
+    common_word, count = most_common_word(content)
+    avg_length = average_word_length(content)
+    
+    print(f"File: {filename}")
+    print(f"Number of lines: {num_lines}")
+    print(f"Number of words: {num_words}")
+    print(f"Most common word: '{common_word}' (appears {count} times)")
+    print(f"Average word length: {avg_length:.2f} characters")
+
+# Run the analysis
+analyze_text('sample.txt')
+```
+
+## Exercises for Students
+
+1. Modify the program to count the number of unique words in the text.
+2. Add a function to find the longest word in the text.
+3. Implement a feature to count the occurrences of a specific word (case-insensitive).
+4. Create a function to calculate the percentage of words that are longer than the average word length.
+
+## Conclusion
+
+In this lab, you've created a text file analyzer using Python. You've practiced file handling, string manipulation, and using control structures like loops and conditionals. The modular approach we've taken allows for easy expansion and modification of the program.
+
+Remember to test your code with different text files to ensure it works correctly in various scenarios.
