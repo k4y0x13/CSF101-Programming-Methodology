@@ -8,7 +8,7 @@ Create a new GitHub repository for your lab submissions with the following struc
 SWE_Practical_Works/ # this is the repo name and not a directory under the repo.
 │
 ├── README.md # description about the repo and what have you implemented
-├── lab1/
+├── lab2/
 │   ├── text_analyzer.py
 │   ├── sample.txt
 │ . . . 
