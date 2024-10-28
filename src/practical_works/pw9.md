@@ -3,6 +3,8 @@
 ## Objective
 In this lab, you will implement a graph data structure and basic graph traversal algorithms in Python. This exercise will help you understand graph representations and practice implementing depth-first search (DFS) and breadth-first search (BFS) algorithms.
 
+**Submission Date:** November 4st
+
 ## Prerequisites
 - Basic knowledge of Python syntax
 - Understanding of data structures (particularly dictionaries)

@@ -3,6 +3,8 @@
 ## Objective
 In this lab, you will implement stack and queue data structures in Python and use them to solve practical problems. This exercise will help you understand these fundamental data structures and their applications.
 
+**Submission Date:** October 29th
+
 ## Prerequisites
 - Basic knowledge of Python syntax
 - Understanding of lists in Python

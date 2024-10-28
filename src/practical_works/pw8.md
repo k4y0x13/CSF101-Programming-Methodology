@@ -3,6 +3,8 @@
 ## Objective
 In this lab, you will implement three classic sorting algorithms: Bubble Sort, Merge Sort, and Quick Sort. This exercise will help you understand the mechanics of these algorithms and compare their performance.
 
+**Submission Date:** November 4st
+
 ## Prerequisites
 - Basic knowledge of Python syntax
 - Understanding of lists and functions in Python
