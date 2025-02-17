@@ -1,6 +1,6 @@
 # Practical Work I
+## Data Types
 ```python
-import random
 print("Hello!!!!")
 print("This is my first script!")
 
@@ -22,7 +22,12 @@ bool("Hello")
 
 x = None
 print(x)
+```
 
+## Python Operator
+Looking into python operators with print statements and a guessing game
+```python
+import random
 a = 10
 b = random.randint(0,20)
 c = 100
@@ -40,4 +45,16 @@ while(c != b):
         break
     else:
         print("Wrong Answer, Try Again!")
+```
+
+## Scope
+Notice how s has different defined value for the string in local scope versus global scope.
+```python
+def func():
+    # Local scope
+    s = "Me too! (on local scope)"
+    print(s)
+# Global scope
+s = "I love python! (on global scope)"
+print(s)
 ```
