@@ -48,7 +48,7 @@ while(c != b):
 ```
 
 ## Scope
-Notice how s has different defined value for the string in local scope versus global scope.
+Notice how s has different defined value for the string in local scope within the function func() versus global scope for the overall python file.
 ```python
 def func():
     # Local scope
