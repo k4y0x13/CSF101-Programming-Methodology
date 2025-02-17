@@ -34,8 +34,10 @@ print("a + b is", a + b)
 print("a * b is", a * b)
 print("a to the power of b is", a ** b)
 while(c != b):
-    c = int(input("Enter Guess!\n"))
+    c = int(input("Enter Guess! "))
     if (c == b):
         print("You won!")
         break
+    else:
+        print("Wrong Answer, Try Again!")
 ```
