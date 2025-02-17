@@ -1,4 +1,5 @@
 # Practical Work I
+```python
 import random
 a = 10
 b = random.randint(0,20)
@@ -39,3 +40,4 @@ bool("Hello")
 
 x = None
 print(x)
+```
