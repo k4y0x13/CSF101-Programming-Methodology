@@ -1,6 +1,12 @@
 # Practical I: Python Basics
 
-### Creating a Function
+## Python Comments
+This is done with the # character at the beginning of the line
+```python
+# This is a comment line in the code
+```
+
+## Creating a Function
 In Python a function is defined using the def keyword:
 ```python
 def my_function():
@@ -21,11 +27,8 @@ s = "I love python! (on global scope)"
 print(s)
 ```
 
-## Basic Data Types
+## Basic Data Types - Integer, Float, Boolean, None and Type Casting
 ```python
-print("Hello!!!!")
-print("This is my first script!")
-
 # Integer
 pi = 3.14
 pi2 = int(pi)
@@ -49,6 +52,41 @@ bool("Hello")
 x = None
 print(x)
 ```
+## Basic Data Types: String and Manipulations
+``` Python
+print("Hello!!!!")
+print("This is my first script!")
+str = """Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua."""
+print(a)
+
+# String functions
+print(len(a))
+print(a.upper())
+print(a.lower())
+print(a.count())
+print(a.find('d'))
+print(a.split())
+
+# String Concatenation
+b = "Hello"
+c = "Hello"
+d = b + "!!" + c + "??"
+print(d)
+
+# String replication
+print("Alice" * 5)
+
+# String formatting
+name = "Karma"
+print(f"Hello {name}")
+print("Greeting to you, {}".format(name))
+Number = 2
+print("There are %d %s in the class" %(Number, name))
+```
+
 ## Basic Data Structures
 ```python
 # List
