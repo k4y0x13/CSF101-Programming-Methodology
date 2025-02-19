@@ -51,7 +51,14 @@ print(x)
 ```
 ## Basic Data Structures
 ```python
-
+# List
+thislist = ["apple", "banana", "cherry"]
+print(thislist)
+print(len(thislist))
+print(thislist.index("banana"))
+thislist.remove("banana")
+thislist.insert(1, "strawberry")
+print(thislist)
 ```
 
 ## Python Operator
