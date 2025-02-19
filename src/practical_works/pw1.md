@@ -1,4 +1,4 @@
-# Practical Work I
+# Practical I: Python Basics
 
 ### Creating a Function
 In Python a function is defined using the def keyword:
