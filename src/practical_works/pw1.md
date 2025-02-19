@@ -1,4 +1,14 @@
 # Practical Work I
+
+### Creating a Function
+In Python a function is defined using the def keyword:
+```python
+def my_function():
+  print("Hello from a function")
+# Calling the function
+my_function() 
+```
+
 ## Data Types
 ```python
 print("Hello!!!!")
