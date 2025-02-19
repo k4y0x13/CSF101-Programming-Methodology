@@ -9,29 +9,49 @@ def my_function():
 my_function() 
 ```
 
-## Data Types
+## Scope
+Notice how s has different defined value for the string in local scope within the function func() versus global scope for the overall python file.
+```python
+def func():
+    # Local scope
+    s = "Me too! (on local scope)"
+    print(s)
+# Global scope
+s = "I love python! (on global scope)"
+print(s)
+```
+
+## Basic Data Types
 ```python
 print("Hello!!!!")
 print("This is my first script!")
 
+# Integer
 pi = 3.14
 pi2 = int(pi)
 print(pi)
 print(pi2)
 
+# Float
 pi3 = "3.14"
 print(type(pi3))
 pi4 = float(pi3)
 print(type(pi4))
 
+# Boolean
 print(0<1)
 print(1>0)
 bool(0)
 bool(1)
 bool("Hello")
 
+# None
 x = None
 print(x)
+```
+## Basic Data Structures
+```python
+
 ```
 
 ## Python Operator
@@ -55,16 +75,4 @@ while(c != b):
         break
     else:
         print("Wrong Answer, Try Again!")
-```
-
-## Scope
-Notice how s has different defined value for the string in local scope within the function func() versus global scope for the overall python file.
-```python
-def func():
-    # Local scope
-    s = "Me too! (on local scope)"
-    print(s)
-# Global scope
-s = "I love python! (on global scope)"
-print(s)
 ```
