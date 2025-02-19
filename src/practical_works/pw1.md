@@ -56,7 +56,7 @@ print(x)
 ``` Python
 print("Hello!!!!")
 print("This is my first script!")
-str = """Lorem ipsum dolor sit amet,
+a = """Lorem ipsum dolor sit amet,
 consectetur adipiscing elit,
 sed do eiusmod tempor incididunt
 ut labore et dolore magna aliqua."""
@@ -66,7 +66,7 @@ print(a)
 print(len(a))
 print(a.upper())
 print(a.lower())
-print(a.count())
+print(a.count('i'))
 print(a.find('d'))
 print(a.split())
 
