@@ -139,6 +139,7 @@
 ---
 <!--[GitHub Repo Structure](./practical_works/repo_structure.md)-->
 [Practical_Work Submission Guideline](./practical_works/pw_guideline.md)
+[Practical Work 0](./practical_works/pw0.md)
 [Practical Work I](./practical_works/pw1.md)
 [Practical Work II](./practical_works/pw2.md)
 [Practical Work III](./practical_works/pw3.md)
