@@ -130,7 +130,7 @@
       - [Worksheet2](./OOP/Worksheet2.md)
 
 ---
-
+[Assignment I SS2025 1EE,1ECE,1ICE,1ME](./practical_assignments/Assignment1_SS2025.md)
 [Practical Assignment I](./practical_assignments/cap1.md)
 [Practical Assignment II](./practical_assignments/cap2.md)
 [Quiz Output Exercise](./practical_assignments/quiz-1.md)

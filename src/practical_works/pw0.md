@@ -53,7 +53,8 @@ Tutorial for Mac: [https://www.youtube.com/watch?v=B4qsvQ5IqWk](https://www.yout
 ***Note: it is recommended to use a package manager like homebrew for any software you install into your computer here after***
 
 Download git from here: [https://git-scm.com/downloads](https://git-scm.com/downloads)
-___________________________________________________________________
+
+________________________________________________________________________________________________________________________
 
 ## Part 3: Using git
 
@@ -106,6 +107,7 @@ git log
 A successful repository and commit can be seen as follows:
 
 <p align="center"> <img src="../assets/assets%20PW0/6.png"/> </p>
+
 _______________________________________________________________________________________
 
 ## Part 4: Making changes to the file in a git repository
@@ -220,9 +222,9 @@ If your push was successful, you will see the following output.
 
 <p align="center"> <img src="../assets/assets%20PW0/15.png"/> </p>
 
-You can now go and check your empty GitHub repository and notice that the practical file that you had created on your computer is now on git. 
+You can now go and check your empty GitHub repository and notice that the file that you had created on your computers local repository is now on git. 
 
-***Note: for future pushes, you need not follow Step 6 to Step 10. The GitHub authentication is a one-time thing and you do not need to generate a new key for every push. Once you are done committing your code locally using git, you may proceed with the <code>git push -u origin main</code> command to directly push your code to git here after.***
+***Note: for future pushes, you need not follow Step 6 to Step 10. The GitHub personal access token generation is a one-time thing (once for each repo) and you do not need to generate a new key for every push. Once you are done committing your code locally using git, you may proceed with the <code>git push -u origin main</code> command to directly push your code to git here after.***
 
 Congratulations, you now know how to:
 1. Create an empty GitHub repository 
