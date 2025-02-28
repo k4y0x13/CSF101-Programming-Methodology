@@ -84,7 +84,15 @@ git init
 
 This initializes an empty git repository inside your folder
 
-Step 4: Next, type the following command
+Step 4:
+
+Create branch in the repository
+
+```
+git branch -M main
+```
+
+Step 5: Next, type the following command
 
 ```
 git add .
@@ -92,7 +100,7 @@ git add .
 
 This adds all the files that have been changed on created to a staging environment. 
 
-Step 5. Next, type the following command
+Step 6: Next, type the following command
 
 ```
 git commit -m "My first commit" 
