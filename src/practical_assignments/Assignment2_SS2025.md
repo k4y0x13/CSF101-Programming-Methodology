@@ -1,4 +1,4 @@
-# Assignment I
+# Assignment II
 Please refer to the pdf linked below for your Assignment I instruction document.
 
 **NOTE:** 
@@ -7,4 +7,4 @@ Please refer to the pdf linked below for your Assignment I instruction document.
   - Submission of your repository in github.
   - Submission of your code with screenshots in VLE.
 
-[Assignment I - PDF Link](https://drive.google.com/file/d/1DdYCyIQJBFhdlOndgudongL8ZCfnO7m0/view?usp=sharing)
+[Assignment II - PDF Link](https://drive.google.com/file/d/1YKtpuoiZmf6l_Jp0bqlE-GMcHZV23b6b/view?usp=sharing)
