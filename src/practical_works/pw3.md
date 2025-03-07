@@ -31,7 +31,8 @@ else:
     print("a is greater than b")
 '''
 
-### Step 2: Switch Statements
+### Step 2: Match case Statements
+## Printing different days
 ```python
 def main():
     day = 8
@@ -56,9 +57,8 @@ main()
 ```
 
 ### Step 3: While Loops
-
 ## Python Operators
-Looking into python operators with print statements and a guessing game
+Looking into python operators with print statements
 ```python
 import random
 a = 10
@@ -74,8 +74,8 @@ print("a to the power of b is", a ** b)
 ```
 
 ### Step 4: While Loops
-
 # While Loop
+A guessing game using a while loop
 ```python
 import random
 a = 10
