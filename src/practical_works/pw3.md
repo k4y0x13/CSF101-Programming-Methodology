@@ -31,8 +31,8 @@ else:
     print("a is greater than b")
 ```
 
-### Step 2: Match case Statements
-## Printing different days
+## Step 2: Match case Statements
+### Printing different days
 ```python
 def main():
     day = 8
@@ -56,8 +56,8 @@ def main():
 main()
 ```
 
-### Step 3: While Loops
-## Python Operators
+## Step 3: While Loops
+### Python Operators
 Looking into python operators with print statements
 ```python
 import random
@@ -73,8 +73,8 @@ print("a * b is", a * b)
 print("a to the power of b is", a ** b)
 ```
 
-### Step 4: While Loops
-# While Loop
+## Step 4: While Loops
+### While Loop
 A guessing game using a while loop
 ```python
 import random
@@ -89,9 +89,8 @@ while(c != b):
         print("Wrong Answer, Try Again!")
 ```
 
-### Step 5: Implement a Recursive Fibonacci Generator
-
-First, let's create a recursive function to generate Fibonacci numbers:
+## Step 5: Implement a Recursive Fibonacci Generator
+### First, let's create a recursive function to generate Fibonacci numbers:
 
 ```python
 def fibonacci_recursive(n):
