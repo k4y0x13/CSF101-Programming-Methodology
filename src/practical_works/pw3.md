@@ -54,7 +54,26 @@ def main():
             print("Not a weekday")
 main()
 ```
+
 ### Step 3: While Loops
+
+## Python Operators
+Looking into python operators with print statements and a guessing game
+```python
+import random
+a = 10
+b = random.randint(0,20)
+c = 100
+print("a is", a, "and", "b is", b)
+print("The answer to a + b is", a + b)
+print("a < b is", a < b)
+print("a == b is", a == b)
+print("a + b is", a + b)
+print("a * b is", a * b)
+print("a to the power of b is", a ** b)
+```
+
+### Step 4: While Loops
 
 # While Loop
 ```python
@@ -70,7 +89,7 @@ while(c != b):
         print("Wrong Answer, Try Again!")
 ```
 
-### Step 4: Implement a Recursive Fibonacci Generator
+### Step 5: Implement a Recursive Fibonacci Generator
 
 First, let's create a recursive function to generate Fibonacci numbers:
 
@@ -86,7 +105,7 @@ for i in range(10):
     print(f"F({i}) = {fibonacci_recursive(i)}")
 ```
 
-### Step 5: Implement an Iterative Fibonacci Generator
+### Step 6: Implement an Iterative Fibonacci Generator
 
 Now, let's create an iterative function to generate Fibonacci numbers:
 
@@ -104,7 +123,7 @@ for i in range(10):
     print(f"F({i}) = {fibonacci_iterative(i)}")
 ```
 
-### Step 6: Compare Performance
+### Step 7: Compare Performance
 
 Let's create a function to measure the execution time of both approaches:
 
@@ -126,7 +145,7 @@ print(f"Recursive: F({n}) = {recursive_result}, Time: {recursive_time:.6f} secon
 print(f"Iterative: F({n}) = {iterative_result}, Time: {iterative_time:.6f} seconds")
 ```
 
-### Step 7: Implement a Generator Function for Fibonacci Sequence
+### Step 8: Implement a Generator Function for Fibonacci Sequence
 
 Now, let's create a generator function that yields Fibonacci numbers:
 
@@ -144,7 +163,7 @@ for i, fib in enumerate(fibonacci_generator(10)):
     print(f"F({i}) = {fib}")
 ```
 
-### Step 8: Implement Memoization for Recursive Fibonacci
+### Step 9: Implement Memoization for Recursive Fibonacci
 
 To improve the performance of the recursive approach, let's implement memoization:
 
