@@ -120,18 +120,3 @@ print(thisdict)
 print(thisdict["brand"])
 ```
 
-## Python Operator, If-Else and While Loop
-Looking into python operators with print statements and a guessing game
-```python
-import random
-a = 10
-b = random.randint(0,20)
-c = 100
-print("a is", a, "and", "b is", b)
-print("The answer to a + b is", a + b)
-print("a < b is", a < b)
-print("a == b is", a == b)
-print("a + b is", a + b)
-print("a * b is", a * b)
-print("a to the power of b is", a ** b)
-```
