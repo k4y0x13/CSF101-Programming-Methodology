@@ -29,7 +29,7 @@ elif a == b:
     print("a and b are equal")
 else:
     print("a is greater than b")
-'''
+```
 
 ### Step 2: Match case Statements
 ## Printing different days
