@@ -9,7 +9,24 @@ In this lab, you will implement both recursive and iterative approaches to gener
 - Familiarity with recursion and iteration concepts
 
 ## Lab Steps
-### Step 1: If-Else Statements
+## Step 1: Python Operators
+### Looking into python operators with print statements
+```python
+import random
+a = 10
+b = random.randint(0,20)
+c = 100
+print("a is", a, "and", "b is", b)
+print("The answer to a + b is", a + b)
+print("a < b is", a < b)
+print("a == b is", a == b)
+print("a + b is", a + b)
+print("a * b is", a * b)
+print("a to the power of b is", a ** b)
+```
+
+## Step 2: If-Else Statements
+### Trying out if, elif and else
 ```python
 a = 33
 b = 200
@@ -31,7 +48,7 @@ else:
     print("a is greater than b")
 ```
 
-## Step 2: Match case Statements
+## Step 3: Match case Statements
 ### Printing different days
 ```python
 def main():
@@ -54,23 +71,6 @@ def main():
         case _:
             print("Not a weekday")
 main()
-```
-
-## Step 3: While Loops
-### Python Operators
-Looking into python operators with print statements
-```python
-import random
-a = 10
-b = random.randint(0,20)
-c = 100
-print("a is", a, "and", "b is", b)
-print("The answer to a + b is", a + b)
-print("a < b is", a < b)
-print("a == b is", a == b)
-print("a + b is", a + b)
-print("a * b is", a * b)
-print("a to the power of b is", a ** b)
 ```
 
 ## Step 4: While Loops
