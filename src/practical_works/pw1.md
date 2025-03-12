@@ -120,6 +120,7 @@ print(thisdict)
 print(thisdict["brand"])
 ```
 
+<<<<<<< HEAD
 ## Python Operator, If-Else and While Loop
 Looking into python operators with print statements and a guessing game
 ```python
@@ -143,3 +144,63 @@ while(c != b):
     else:
         print("Wrong Answer, Try Again!")
 ```
+
+## Class excercise:
+**Q1. Array manipulation:**  
+Refer to the following documentation on python list methods [Link](https://www.w3schools.com/python/python_ref_list.asp)  
+Create a python list and name it first_list as shown below:  
+```python 
+first_list = [0,1,2,3,4,5,6,7,8,9]
+```  
+Create a second empty list named inverse_list:  
+```python
+inverse_list = []
+```  
+Using the 
+```python
+ .append() 
+ .pop()
+ ```
+ methods, create the implementation of a stack whereby you de-que elements from the first list
+and enqueee them into the second list. Your output must be as follows:
+```python
+ inverse_list = [9,8,7,6,5,4,3,2,1,0]
+ ```
+
+Sample scaffold (fill up with logic and code where necesarry):
+```python
+first_list = [0,1,2,3,4,5,6,7,8,9]
+inverse_list = [9,8,7,6,5,4,3,2,1,0]
+
+index = 9
+#Hint, use a while loop to loop throught first list from the last index
+while index < :
+  inverse_list.append()
+  index = 
+
+print(inverse_list)
+ ```
+
+**Q2. Implementing Functions**  
+Take your array invers implementation from question 1 and define a function known as reverse_array. Pass the 
+first_list() as an argument into the array and ensure that inverse_list is returned when the function is called. 
+
+```python
+
+def reverse_array(first_list):
+  #logic and code from Q1
+
+
+reverse_array(first_list)
+```  
+
+
+
+
+
+
+
+
+
+=======
+>>>>>>> c993d717c387da27de4b1f7e275c5d8afda5616e

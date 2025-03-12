@@ -84,7 +84,15 @@ git init
 
 This initializes an empty git repository inside your folder
 
-Step 4: Next, type the following command
+Step 4:
+
+Create branch in the repository
+
+```
+git branch -M main
+```
+
+Step 5: Next, type the following command
 
 ```
 git add .
@@ -92,7 +100,7 @@ git add .
 
 This adds all the files that have been changed on created to a staging environment. 
 
-Step 5: Next, type the following command
+Step 6: Next, type the following command
 
 ```
 git commit -m "My first commit" 
@@ -212,15 +220,7 @@ Your command should look like this:
 git remote set-url origin https://ghp_OBJnrsdfsdaP251jFasdfasde4ObzzAw1qc1tA@github.com/Darshansgit/02190108_CSF101_Practicals
 ```
 
-Step 11:
-
-Create branch in the repository
-
-```
-git branch -M main
-```
-
-Step 12: Finally you can type the following command in your terminal:
+Step 11: Finally you can type the following command in your terminal:
 
 ```
 git push -u origin main
