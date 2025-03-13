@@ -201,6 +201,3 @@ reverse_array(first_list)
 
 
 
-
-=======
->>>>>>> c993d717c387da27de4b1f7e275c5d8afda5616e
