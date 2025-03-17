@@ -13,7 +13,8 @@ In this lab, you will create a Python program that analyzes a text file and calc
 
 ### Step 0: Preparation
 
-Create a folder and name it practical4. Download the sample.txt text file from this [link](https://drive.google.com/file/d/1j2MC-RE4UbiPnMsn9ZMtjXqVnlX0rZgA/view?usp=sharing).
+Create a folder and name it practical4. Download the sample.txt text file from this [link](https://drive.google.com/file/d/1j2MC-RE4UbiPnMsn9ZMtjXqVnlX0rZgA/view?usp=sharing) and save it inside the folder. Create your practical5.py file in the same folder
+and continue with the subsequent steps. 
 
 ### Step 1: Open and Read a Text File
 
