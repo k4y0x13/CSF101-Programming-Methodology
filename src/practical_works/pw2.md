@@ -3,7 +3,6 @@
 ## Objective
 In this lab, you will create a Python program that analyzes a text file and calculates various statistics using control structures. This exercise will help you practice file handling, string manipulation, and using loops and conditionals in Python.
 
-**Submission Date:** October 28th
 
 ## Prerequisites
 - Basic knowledge of Python syntax
@@ -11,6 +10,10 @@ In this lab, you will create a Python program that analyzes a text file and calc
 - Familiarity with control structures (if statements, loops)
 
 ## Lab Steps
+
+### Step 0: Preparation
+
+Create a folder and name it practical4. Download the sample.txt text file from this [link](https://drive.google.com/file/d/1j2MC-RE4UbiPnMsn9ZMtjXqVnlX0rZgA/view?usp=sharing).
 
 ### Step 1: Open and Read a Text File
 
