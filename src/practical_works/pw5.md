@@ -1,4 +1,4 @@
-# Practical 6: Singly Linked List Implementation
+# Practical 5: Singly Linked List Implementation
 
 ## Objective
 In this lab, you will implement a singly linked list data structure in Python. You'll create basic operations and list manipulation functions, gaining a deeper understanding of linked data structures and their operations.
