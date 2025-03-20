@@ -1,4 +1,4 @@
-# Practical 5: Singly Linked List Implementation, Reverse Linked List, Merge Two Sorted Lists, Remove Nth Node From End of List
+# Practical 8: Singly Linked List Implementation, Reverse Linked List, Merge Two Sorted Lists, Remove Nth Node From End of List
 
 ## Objective
 In this lab, you will implement a singly linked list data structure in Python. You'll create basic operations and list manipulation functions, gaining a deeper understanding of linked data structures and their operations.
