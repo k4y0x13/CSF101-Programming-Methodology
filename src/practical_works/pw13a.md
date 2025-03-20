@@ -1,4 +1,4 @@
-# Practical 14 (Optional): Implementing a Binary Search Tree
+# Practical 13a (Optional): Implementing a Binary Search Tree
 
 ## Objective
 In this lab, you will implement a Binary Search Tree (BST) in Python, including methods for insertion, deletion, search, and various traversal operations. This exercise will help you understand tree data structures and practice recursive algorithms.
