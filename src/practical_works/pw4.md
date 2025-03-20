@@ -1,4 +1,4 @@
-# Practical 5: Implementing Stacks and Queues
+# Practical 4: Implementing Stacks and Queues
 
 ## Objective
 In this lab, you will implement stack and queue data structures in Python and use them to solve practical problems. This exercise will help you understand these fundamental data structures and their applications.
