@@ -1,4 +1,4 @@
-# Practical 3a: Practicing Python Loops and Logical Conditions
+# Practical 3: Practicing Python Loops and Logical Conditions
 
 ## Objective
 In this lab, you will implement both recursive and iterative approaches to generate Fibonacci sequences in Python. This exercise will help you understand the differences between recursive and iterative problem-solving techniques, as well as analyze their performance characteristics.
