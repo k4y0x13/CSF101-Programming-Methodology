@@ -120,31 +120,6 @@ print(thisdict)
 print(thisdict["brand"])
 ```
 
-<<<<<<< HEAD
-## Python Operator, If-Else and While Loop
-Looking into python operators with print statements and a guessing game
-```python
-import random
-a = 10
-b = random.randint(0,20)
-c = 100
-print("a is", a, "and", "b is", b)
-print("The answer to a + b is", a + b)
-print("a < b is", a < b)
-print("a == b is", a == b)
-print("a + b is", a + b)
-print("a * b is", a * b)
-print("a to the power of b is", a ** b)
-# If-Else Statement in While Loop
-while(c != b):
-    c = int(input("Enter Guess! "))
-    if (c == b):
-        print("You won!")
-        break
-    else:
-        print("Wrong Answer, Try Again!")
-```
-
 ## Class excercise:
 **Q1. Array manipulation:**  
 Refer to the following documentation on python list methods [Link](https://www.w3schools.com/python/python_ref_list.asp)  
@@ -193,11 +168,6 @@ def reverse_array(first_list):
 
 reverse_array(first_list)
 ```  
-
-
-
-
-
 
 
 
