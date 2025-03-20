@@ -1,4 +1,4 @@
-# Practical 6: Algorithms Valid Anagram, Two Sums, Valid Palindrome, Three Sums, Sliding Window (Best Time to Buy And Sell Stock, Longest Substring Without Repeating Characters) Exercises
+# Practical 6a: Algorithms Valid Anagram, Two Sums, Valid Palindrome, Three Sums, Sliding Window (Best Time to Buy And Sell Stock, Longest Substring Without Repeating Characters) Exercises
 
 ## Objective
 In this lab, you will implement following algorithms: Valid Anagram, Two Sums, Valid Palindrome, Three Sums, Sliding Window Exercises. This exercise will help you understand the mechanics of these algorithms and compare their performance.
