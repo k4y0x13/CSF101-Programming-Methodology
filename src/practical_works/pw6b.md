@@ -1,4 +1,4 @@
-# Practical 6b: Algorithms Backtracking and Recursions Exercises
+# Practical 8: Algorithms Backtracking and Recursions Exercises
 
 ## Objective
 In this lab, you will implement backtracking and recursion exercises. This exercise will help you understand the mechanics of these algorithms and compare their performance.
