@@ -1,4 +1,4 @@
-# Practical I: Python Basics
+# Practical 2: Python Basics
 
 ## Python Comments
 This is done with the # character at the beginning of the line
