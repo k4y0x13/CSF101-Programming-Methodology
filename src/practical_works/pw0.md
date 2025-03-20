@@ -1,4 +1,4 @@
-# Practical 1 - Setup and Git Fundamentals
+# Practical 0 - Setup and Git Fundamentals
 
 Please enable the autosave feature in VScode before proceeding with this practical, this can be found in the File tab in the VScode window:
 
