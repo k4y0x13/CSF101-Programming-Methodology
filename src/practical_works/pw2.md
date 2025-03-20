@@ -1,4 +1,4 @@
-# Practical 2: Text File Analyzer
+# Practical 2: Coding Basic Functions
 
 ## Objective
 In this lab, you will create a Python program that analyzes a text file and calculates various statistics using control structures. This exercise will help you practice file handling, string manipulation, and using loops and conditionals in Python.
@@ -6,8 +6,7 @@ In this lab, you will create a Python program that analyzes a text file and calc
 
 ## Prerequisites
 - Basic knowledge of Python syntax
-- Understanding of file operations in Python
-- Familiarity with control structures (if statements, loops)
+- Understanding of file operations
 
 ## Lab Steps
 
