@@ -40,6 +40,17 @@ Below is the pseudocode for Binary search.
                   else                  
                       HIGH = MID – 1
 
+### Step 5: Try past midterm question
+Design a simple weather data analysis program for a local meteorology station. The program should calculate the average temperature, convert units, and determine temperature ranges.
+Create a flowchart and write pseudocode for this system with the following requirements:
+● Ask the user to input the highest and lowest temperatures for a day (in Celsius).
+● Calculate and display the average temperature for the day.
+● Convert the average temperature to Fahrenheit and display it.
+Determine and display the temperature range category based on the following criteria:
+● If the range (difference between highest and lowest) is less than 10°C: "Stable"
+● If the range is between 10°C and 20°C: "Moderate"
+● If the range is greater than 20°C: "Volatile"
+● If either input temperature is less than -50°C or greater than 50°C, display an error message for invalid input.
 
 ## Exercises for Students
 
