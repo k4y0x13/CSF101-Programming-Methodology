@@ -11,9 +11,14 @@ In this lab, you will implement following  Exercises. This exercise will help yo
 ## Lab Steps
 
 ### Step 1: Download and install Flowgorithm
-
 Get Flowgorithm from the following link
+
 http://www.flowgorithm.org/download/index.html
+
+### Step 2: Follow Basic Tutorial
+Check the beginner video about checking a number for even or odd property.
+
+[![Flowgorithm Full Tutorial](https://www.youtube.com/watch?v=qoV-2kMqu5A)](https://www.youtube.com/watch?v=qoV-2kMqu5A)
 
 ### Step 2: Implement Basic Sum
 Implement the following flow chart, and create python source code
