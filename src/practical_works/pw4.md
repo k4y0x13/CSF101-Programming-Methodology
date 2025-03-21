@@ -20,17 +20,17 @@ Check the beginner video about checking a number for even or odd property.
 
 [![Flowgorithm Full Tutorial](https://www.youtube.com/watch?v=qoV-2kMqu5A)](https://www.youtube.com/watch?v=qoV-2kMqu5A)
 
-### Step 2: Implement Basic Sum
+### Step 3: Implement Basic Sum
 Implement the following flow chart, and create python source code
 
 <img width="326" alt="image" src="https://github.com/user-attachments/assets/ca051e86-e905-435a-909a-931292ba7988" />
 
-### Step 3: Implement Largest Number
+### Step 4: Implement Largest Number
 Implement the following flow chart, and create python source code
 
 <img width="540" alt="image" src="https://github.com/user-attachments/assets/85bded29-52d8-49a7-964d-ef2d17477d62" />
 
-### Step 4: Study Pseudo Code
+### Step 5: Study Pseudo Code
 Binary search is a searching algorithm that works only for sorted search space. It repeatedly divides the search space into half by using the fact that the search space is sorted and checking if the desired search result will be found in the left or right half.
 Example: Given a sorted array Arr[] and a value X, The task is to find the index at which X is present in Arr[].
 Below is the pseudocode for Binary search.
@@ -45,7 +45,7 @@ Below is the pseudocode for Binary search.
                   else                  
                       HIGH = MID – 1
 
-### Step 5: Try past midterm question
+### Step 6: Try past midterm question
 Design a simple weather data analysis program for a local meteorology station. The program should calculate the average temperature, convert units, and determine temperature ranges.
 
 Create a flowchart and write pseudocode for this system with the following requirements:
