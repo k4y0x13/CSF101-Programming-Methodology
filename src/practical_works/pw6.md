@@ -16,6 +16,7 @@ In this lab, you will implement following algorithms: Valid Anagram, Two Sums, V
 Leetcode problems on Contains Duplicate, Valid Anagram, Two Sums
 
 #### Contains Duplicate
+https://leetcode.com/problems/contains-duplicate <br>
 Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
 
 Example: <br>
@@ -27,7 +28,6 @@ Input: nums = [1,2,3,4] <br>
 Output: false <br>
 Explanation: All elements are distinct.
 
-https://leetcode.com/problems/contains-duplicate
 
 Python
 ```python
@@ -44,7 +44,8 @@ class Solution:
 ```
 
 #### Valid Anagram
-Given two strings s and t, return true if t is an anagram of s, and false otherwise. Anagram is a word, phrase, or name formed by rearranging the letters of another.<img width="2065" alt="image" src="https://github.com/user-attachments/assets/e995f5ff-8a8c-47e5-8c11-56b87746d614" />
+https://leetcode.com/problems/valid-anagram <br>
+Given two strings s and t, return true if t is an anagram of s, and false otherwise. Anagram is a word, phrase, or name formed by rearranging the letters of another.
 
 Example: <br>
 Input: s = "anagram", t = "nagaram" <br>
@@ -53,7 +54,6 @@ Output: true <br>
 Input: s = "rat", t = "car" <br>
 Output: false <br>
 
-https://leetcode.com/problems/valid-anagram
 
 Python
 ```python
@@ -82,6 +82,7 @@ class Solution:
 ```
 
 #### Two Sum
+https://leetcode.com/problems/two-sum <br>
 Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice. You can return the answer in any order.
 
 Example: <br>
@@ -91,8 +92,6 @@ Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 
 Input: nums = [3,2,4], target = 6  <br>
 Output: [1,2] <br>
-
-https://leetcode.com/problems/two-sum
 
 Python3
 ```Python
@@ -120,6 +119,7 @@ class Solution:
 Leetcode problems on Valid Palindrome, Three Sums
 
 #### Valid Palindrome
+https://leetcode.com/problems/valid-palindrome <br>
 A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers. Given a string s, return true if it is a palindrome, or false otherwise.
 
 Example: <br>
@@ -130,8 +130,6 @@ Explanation: "amanaplanacanalpanama" is a palindrome. <br>
 Input: s = "race a car" <br>
 Output: false <br>
 Explanation: "raceacar" is not a palindrome. <br>
-
-https://leetcode.com/problems/valid-palindrome
 
 Python 3
 ```Python
@@ -150,6 +148,7 @@ class Solution:
 ```
 
 #### Three Sum
+https://leetcode.com/problems/3sum <br>
 Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0. Notice that the solution set must not contain duplicate triplets.
 
 Example: <br>
@@ -165,8 +164,6 @@ Notice that the order of the output and the order of the triplets does not matte
 Input: nums = [0,1,1] <br>
 Output: [] <br>
 Explanation: The only possible triplet does not sum up to 0.
-
-https://leetcode.com/problems/3sum
 
 Python 3
 ```Python
