@@ -218,23 +218,68 @@ class Solution:
 ### Step 3: Algorithm Problems Sliding Window (Best Time to Buy And Sell Stock), Longest Substring Without Repeating Characters
 Leetcode problems on Sliding Window (Best Time to Buy And Sell Stock), Longest Substring Without Repeating Characters
 
-https://leetcode.com/problems/best-time-to-buy-and-sell-stock
+#### Best Time to Buy And Sell Stock
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock <br>
+You are given an array prices where prices[i] is the price of a given stock on the ith day. You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock. Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
 
-https://leetcode.com/problems/longest-substring-without-repeating-characters
+Example: <br>
+Input: prices = [7,1,5,3,6,4] <br>
+Output: 5  <br>
+Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5. Note that buying on day 2 and selling on day 1 is not allowed because you must buy before you sell. 
+
+Python
+```python
+class Solution:
+    def maxProfit(self, prices):
+        buy = prices[0]
+        profit = 0
+        for i in range(1, len(prices)):
+            if prices[i] < buy:
+                buy = prices[i]
+            elif prices[i] - buy > profit:
+                profit = prices[i] - buy
+        return profit
+```
+#### Longest Substring Without Repeating Characters
+https://leetcode.com/problems/longest-substring-without-repeating-characters <br>
+Given a string s, find the length of the longest without duplicate characters.
+
+Example: <br>
+Input: s = "abcabcbb” <br>
+Output: 3 <br>
+Explanation: The answer is "abc", with the length of 3.
+
+Input: s = "bbbbb" <br>
+Output: 1  <br>
+Explanation: The answer is "b", with the length of 1. 
 
 ```python
-
+class Solution:
+    def lengthOfLongestSubstring(self, s):
+        n = len(s)
+        maxLength = 0
+        charSet = set()
+        left = 0
+        for right in range(n):
+            if s[right] not in charSet:
+                charSet.add(s[right])
+                maxLength = max(maxLength, right - left + 1)
+            else:
+                while s[right] in charSet:
+                    charSet.remove(s[left])
+                    left += 1
+                charSet.add(s[right])
+        return maxLength
 ```
-
 
 ## Exercises for Students
 
-1. Implement
+1. 
 
 ## Conclusion
 
 In this lab, you've implemented some algorithms: Contains Duplicate, Valid Anagram, Two Sums, Valid Palindrome, Three Sums and Sliding Window Exercises.
 
 Key takeaways:
-- 
+- How to create algorithms that solve specific problems.
 
