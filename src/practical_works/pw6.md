@@ -119,12 +119,102 @@ class Solution:
 ### Step 2: Algorithm Problems on Valid Palindrome, Three Sums
 Leetcode problems on Valid Palindrome, Three Sums
 
+#### Valid Palindrome
+A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers. Given a string s, return true if it is a palindrome, or false otherwise.
+
+Example:
+Input: s = "A man, a plan, a canal: Panama"
+Output: true
+Explanation: "amanaplanacanalpanama" is a palindrome.
+
+Input: s = "race a car"
+Output: false
+Explanation: "raceacar" is not a palindrome.
+
 https://leetcode.com/problems/valid-palindrome
 
+Python 3
+```Python
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        s = [c.lower() for c in s if c.isalnum()]
+        return all (s[i] == s[~i] for i in range(len(s)//2))
+```
+
+Python
+```Python
+class Solution:
+    def isPalindrome(self, s):
+        s = [c.lower() for c in s if c.isalnum()]
+        return all (s[i] == s[~i] for i in range(len(s)//2))
+```
+
+#### Three Sum
+Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
+Notice that the solution set must not contain duplicate triplets.
+Example:
+Input: nums = [-1,0,1,2,-1,-4]
+Output: [[-1,-1,2],[-1,0,1]]
+Explanation: 
+nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0.
+nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0.
+nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0.
+The distinct triplets are [-1,0,1] and [-1,-1,2].
+Notice that the order of the output and the order of the triplets does not matter.
+
+Input: nums = [0,1,1]
+Output: []
+Explanation: The only possible triplet does not sum up to 0.
+
 https://leetcode.com/problems/3sum
+Python 3
+```Python
+class Solution:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
+        target = 0
+        nums.sort()
+        s = set()
+        output = []
+        for i in range(len(nums)):
+            j = i + 1
+            k = len(nums) - 1
+            while j < k:
+                sum = nums[i] + nums[j] + nums[k]
+                if sum == target:
+                    s.add((nums[i], nums[j], nums[k]))
+                    j += 1
+                    k -= 1
+                elif sum < target:
+                    j += 1
+                else:
+                    k -= 1
+        output = list(s)
+        return output
+```
 
+Python
 ```python
-
+class Solution:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
+        target = 0
+        nums.sort()
+        s = set()
+        output = []
+        for i in range(len(nums)):
+            j = i + 1
+            k = len(nums) - 1
+            while j < k:
+                sum = nums[i] + nums[j] + nums[k]
+                if sum == target:
+                    s.add((nums[i], nums[j], nums[k]))
+                    j += 1
+                    k -= 1
+                elif sum < target:
+                    j += 1
+                else:
+                    k -= 1
+        output = list(s)
+        return output
 ```
 
 ### Step 3: Algorithm Problems Sliding Window (Best Time to Buy And Sell Stock), Longest Substring Without Repeating Characters
