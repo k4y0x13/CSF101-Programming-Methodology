@@ -10,12 +10,10 @@ In this lab, you will implement following algorithms: Valid Anagram, Two Sums, V
 - Understanding of lists and functions in Python
 - Familiarity with time complexity concepts (optional, but helpful)
 
-## Lab Steps
-
-### Step 1: Algorithm Problems on Contains Duplicate, Valid Anagram, Two Sums
+## Lab Steps: Algorithm Problems on Contains Duplicate, Valid Anagram, Two Sums
 Leetcode problems on Contains Duplicate, Valid Anagram, Two Sums
 
-#### Contains Duplicate
+### Step 1: Contains Duplicate
 https://leetcode.com/problems/contains-duplicate <br>
 Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
 
@@ -27,7 +25,6 @@ Explanation: The element 1 occurs at the indices 0 and 3.
 Input: nums = [1,2,3,4] <br>
 Output: false <br>
 Explanation: All elements are distinct.
-
 
 Python
 ```python
@@ -43,7 +40,7 @@ class Solution:
 		return len(set(nums))!=len(nums)
 ```
 
-#### Valid Anagram
+### Step 2: Valid Anagram
 https://leetcode.com/problems/valid-anagram <br>
 Given two strings s and t, return true if t is an anagram of s, and false otherwise. Anagram is a word, phrase, or name formed by rearranging the letters of another.
 
@@ -81,7 +78,7 @@ class Solution:
         return (len(set(count)) == 1 and list(set(count))[0] == 0)
 ```
 
-#### Two Sum
+### Step 3: Two Sum
 https://leetcode.com/problems/two-sum <br>
 Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice. You can return the answer in any order.
 
@@ -115,10 +112,10 @@ class Solution:
         return []
 ```
 
-### Step 2: Algorithm Problems on Valid Palindrome, Three Sums
+## Algorithm Problems on Valid Palindrome, Three Sums
 Leetcode problems on Valid Palindrome, Three Sums
 
-#### Valid Palindrome
+### Step 4: Valid Palindrome
 https://leetcode.com/problems/valid-palindrome <br>
 A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers. Given a string s, return true if it is a palindrome, or false otherwise.
 
@@ -147,7 +144,7 @@ class Solution:
         return all (s[i] == s[~i] for i in range(len(s)//2))
 ```
 
-#### Three Sum
+### Step 5: Three Sum
 https://leetcode.com/problems/3sum <br>
 Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0. Notice that the solution set must not contain duplicate triplets.
 
@@ -215,10 +212,10 @@ class Solution:
         return output
 ```
 
-### Step 3: Algorithm Problems Sliding Window (Best Time to Buy And Sell Stock), Longest Substring Without Repeating Characters
+## Algorithm Problems on Sliding Window (Best Time to Buy And Sell Stock), Longest Substring Without Repeating Characters
 Leetcode problems on Sliding Window (Best Time to Buy And Sell Stock), Longest Substring Without Repeating Characters
 
-#### Best Time to Buy And Sell Stock
+### Step 6: Best Time to Buy And Sell Stock
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock <br>
 You are given an array prices where prices[i] is the price of a given stock on the ith day. You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock. Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
 
@@ -240,7 +237,7 @@ class Solution:
                 profit = prices[i] - buy
         return profit
 ```
-#### Longest Substring Without Repeating Characters
+### Step 7: Longest Substring Without Repeating Characters
 https://leetcode.com/problems/longest-substring-without-repeating-characters <br>
 Given a string s, find the length of the longest without duplicate characters.
 
