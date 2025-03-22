@@ -18,13 +18,13 @@ Leetcode problems on Contains Duplicate, Valid Anagram, Two Sums
 #### Contains Duplicate
 Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
 
-Example:
-Input: nums = [1,2,3,1]
-Output: true
+Example: <br>
+Input: nums = [1,2,3,1] <br>
+Output: true <br>
 Explanation: The element 1 occurs at the indices 0 and 3.
 
-Input: nums = [1,2,3,4]
-Output: false
+Input: nums = [1,2,3,4] <br>
+Output: false <br>
 Explanation: All elements are distinct.
 
 https://leetcode.com/problems/contains-duplicate
@@ -46,12 +46,12 @@ class Solution:
 #### Valid Anagram
 Given two strings s and t, return true if t is an anagram of s, and false otherwise. Anagram is a word, phrase, or name formed by rearranging the letters of another.<img width="2065" alt="image" src="https://github.com/user-attachments/assets/e995f5ff-8a8c-47e5-8c11-56b87746d614" />
 
-Example:
-Input: s = "anagram", t = "nagaram"
-Output: true
+Example: <br>
+Input: s = "anagram", t = "nagaram" <br>
+Output: true <br>
 
-Input: s = "rat", t = "car"
-Output: false
+Input: s = "rat", t = "car" <br>
+Output: false <br>
 
 https://leetcode.com/problems/valid-anagram
 
@@ -84,13 +84,13 @@ class Solution:
 #### Two Sum
 Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice. You can return the answer in any order.
 
-Example:
-Input: nums = [2,7,11,15], target = 9
-Output: [0,1] 
+Example: <br>
+Input: nums = [2,7,11,15], target = 9 <br>
+Output: [0,1]  <br>
 Explanation: Because nums[0] + nums[1] == 9, we return [0, 1]. 
 
-Input: nums = [3,2,4], target = 6 
-Output: [1,2]
+Input: nums = [3,2,4], target = 6  <br>
+Output: [1,2] <br>
 
 https://leetcode.com/problems/two-sum
 
@@ -122,14 +122,14 @@ Leetcode problems on Valid Palindrome, Three Sums
 #### Valid Palindrome
 A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers. Given a string s, return true if it is a palindrome, or false otherwise.
 
-Example:
-Input: s = "A man, a plan, a canal: Panama"
-Output: true
-Explanation: "amanaplanacanalpanama" is a palindrome.
+Example: <br>
+Input: s = "A man, a plan, a canal: Panama" <br>
+Output: true <br>
+Explanation: "amanaplanacanalpanama" is a palindrome. <br>
 
-Input: s = "race a car"
-Output: false
-Explanation: "raceacar" is not a palindrome.
+Input: s = "race a car" <br>
+Output: false <br>
+Explanation: "raceacar" is not a palindrome. <br>
 
 https://leetcode.com/problems/valid-palindrome
 
@@ -150,23 +150,24 @@ class Solution:
 ```
 
 #### Three Sum
-Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
-Notice that the solution set must not contain duplicate triplets.
-Example:
-Input: nums = [-1,0,1,2,-1,-4]
-Output: [[-1,-1,2],[-1,0,1]]
-Explanation: 
-nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0.
-nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0.
-nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0.
-The distinct triplets are [-1,0,1] and [-1,-1,2].
-Notice that the order of the output and the order of the triplets does not matter.
+Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0. Notice that the solution set must not contain duplicate triplets.
 
-Input: nums = [0,1,1]
-Output: []
+Example: <br>
+Input: nums = [-1,0,1,2,-1,-4] <br>
+Output: [[-1,-1,2],[-1,0,1]] <br>
+Explanation:  <br>
+nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0. <br>
+nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0. <br>
+nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0. <br>
+The distinct triplets are [-1,0,1] and [-1,-1,2]. <br>
+Notice that the order of the output and the order of the triplets does not matter. <br>
+
+Input: nums = [0,1,1] <br>
+Output: [] <br>
 Explanation: The only possible triplet does not sum up to 0.
 
 https://leetcode.com/problems/3sum
+
 Python 3
 ```Python
 class Solution:
@@ -195,7 +196,7 @@ class Solution:
 Python
 ```python
 class Solution:
-    def threeSum(self, nums: List[int]) -> List[List[int]]:
+    def threeSum(self, nums):
         target = 0
         nums.sort()
         s = set()
