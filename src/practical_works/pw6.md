@@ -173,6 +173,19 @@ class Solution:
         return []
 ```
 
+One-Pass Hash Table Method
+```Python
+class Solution(object):
+    def twoSum(self, nums, target):
+      numMap = {}
+      for i, num in enumerate(nums):
+          complement = target - num
+          if complement in numMap:
+            return [numMap[complement], i]
+          numMap[num] = i
+      return []
+```
+
 ## Algorithm Problems on Valid Palindrome, Three Sums
 Leetcode problems on Valid Palindrome, Three Sums
 
