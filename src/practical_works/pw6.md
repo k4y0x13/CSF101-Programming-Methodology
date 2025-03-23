@@ -40,6 +40,35 @@ class Solution:
 		return len(set(nums))!=len(nums)
 ```
 
+HashSet Method
+```python
+# Python Program check if there are any duplicates  
+# in the array using Hashing
+
+def checkDuplicates(arr):
+    n = len(arr)
+
+    # Create a set to store the unique elements
+    st = set()
+
+    # Iterate through each element
+    for i in range(n):
+        
+        # If the element is already present, return true
+        # Else insert the element into the set
+        if arr[i] in st:
+            return True
+        else:
+            st.add(arr[i])
+
+    # If no duplicates are found, return false
+    return False
+
+if __name__ == "__main__":
+    arr = [4, 5, 6, 4]
+    print(checkDuplicates(arr))
+```
+
 ### Step 2: Valid Anagram
 https://leetcode.com/problems/valid-anagram <br>
 Given two strings s and t, return true if t is an anagram of s, and false otherwise. Anagram is a word, phrase, or name formed by rearranging the letters of another.
@@ -76,6 +105,38 @@ class Solution:
             count[ord(s[i]) - ord('a')] += 1
             count[ord(t[i]) - ord('a')] -= 1
         return (len(set(count)) == 1 and list(set(count))[0] == 0)
+```
+
+Using Hash Map or Dictionary
+```python
+# Python Code to check if two Strings are anagram of 
+# each other using Dictionary
+
+def areAnagrams(s1, s2):
+    
+    # Create a hashmap to store character frequencies
+    charCount = {}
+    
+    # Count frequency of each character in string s1
+    for ch in s1:
+        charCount[ch] = charCount.get(ch, 0) + 1
+  
+    # Count frequency of each character in string s2
+    for ch in s2:
+        charCount[ch] = charCount.get(ch, 0) - 1
+  
+    # Check if all frequencies are zero
+    for value in charCount.values():
+        if value != 0:
+            return False
+    
+    # If all conditions satisfied, they are anagrams
+    return True
+
+if __name__ == "__main__":
+    s1 = "geeks"
+    s2 = "kseeg"
+    print("true" if areAnagrams(s1, s2) else "false")
 ```
 
 ### Step 3: Two Sum
