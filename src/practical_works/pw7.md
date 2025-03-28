@@ -1,4 +1,4 @@
-# Practical 6: Algorithms Exercises on Arrays, Hashing, Two Pointers, Sliding Window
+# Practical 7: Algorithms Exercises on Arrays, Hashing, Two Pointers, Sliding Window
 
 ## Objective
 In this lab, you will implement following algorithms: Valid Anagram, Two Sums, Valid Palindrome, Three Sums, Sliding Window Exercises. This exercise will help you understand the mechanics of these algorithms and compare their performance.
