@@ -1,17 +1,16 @@
-# Practical 9: Singly Linked List Implementation, Reverse Linked List, Merge Two Sorted Lists, Remove Nth Node From End of List
+# Practical 9: Singly Linked List Implementation including leetcode problems to Reverse Linked List, Merge Two Sorted Lists, Remove Nth Node From End of List
 
 ## Objective
 In this lab, you will implement a singly linked list data structure in Python. You'll create basic operations and list manipulation functions, gaining a deeper understanding of linked data structures and their operations.
 
 **Submission Date:** November 1st
 
-
 ## Prerequisites
 - Basic knowledge of Python syntax
 - Understanding of classes and object-oriented programming in Python
 - Familiarity with data structures concepts
 
-## Lab Steps
+## Part 1: Singly Linked List Implementation
 
 ### Step 1: Define the Node Class
 
@@ -178,7 +177,226 @@ ll.reverse()
 ll.display()  # Output: 3 -> 4 -> 1
 ```
 
-## Exercises for Students
+## Part 2: Reverse Linked List
+### 1. Problem Statement
+
+Given the `head` of a singly linked list, reverse the list, and return the reversed list.
+
+**Example 1:**
+Input: head = [1,2,3,4,5]
+Output: [5,4,3,2,1]
+
+**Example 2:**
+Input: head = [1,2]
+Output: [2,1]
+
+**Example 3:**
+Input: head = []
+Output: []
+
+**Constraints:**
+- The number of nodes in the list is the range [0, 5000].
+- -5000 <= Node.val <= 5000
+
+### 2. Conceptual Understanding
+
+A linked list is a data structure where each element (node) contains a value and a reference (or link) to the next node in the sequence. Reversing a linked list means changing these links so that each node points to its previous node instead of its next node.
+
+Imagine a chain where each link is holding hands with the next link. To reverse it, we need to make each link let go of the hand it's holding and grab the hand of the link behind it instead.
+
+We'll focus on the iterative approach as it's often the most intuitive and efficient:
+
+1. Initialize three pointers: `prev` as None, `current` as the head of the list, and `next` as None.
+2. Traverse the list:
+   - Save the next node.
+   - Reverse the current node's pointer to point to the previous node.
+   - Move `prev` and `current` one step forward.
+3. Return `prev` as the new head of the reversed list.
+
+This approach allows us to reverse the list in a single pass, changing links as we go.
+
+### 3. Python Implementation
+
+```python
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+def reverseList(head):
+    prev = None
+    current = head
+    
+    while current is not None:
+        next_temp = current.next  # Store next node
+        current.next = prev       # Reverse the link
+        prev = current            # Move prev one step
+        current = next_temp       # Move current one step
+    
+    return prev  # prev is the new head of the reversed list
+```
+
+- We define a `ListNode` class to represent each node in the linked list.
+- The `reverseList` function takes the head of the list and returns the new head of the reversed list.
+- We use three pointers: `prev`, `current`, and `next_temp` to manage the reversal process.
+
+## Part 3: Merge Two Sorted Lists
+
+## 1. Problem Statement
+
+You are given the heads of two sorted linked lists `list1` and `list2`.
+
+Merge the two lists in a one sorted list. The list should be made by splicing together the nodes of the first two lists.
+
+Return the head of the merged linked list.
+
+**Example 1:**
+Input: list1 = [1,2,4], list2 = [1,3,4]
+Output: [1,1,2,3,4,4]
+
+**Example 2:**
+Input: list1 = [], list2 = []
+Output: []
+
+**Example 3:**
+Input: list1 = [], list2 = [0]
+Output: [0]
+
+**Constraints:**
+- The number of nodes in both lists is in the range [0, 50].
+- -100 <= Node.val <= 100
+- Both list1 and list2 are sorted in non-decreasing order.
+
+## 2. Conceptual Understanding
+
+This problem involves working with linked lists, a fundamental data structure in computer science. The task is to combine two already sorted linked lists into a single sorted linked list.
+
+Think of it like merging two sorted piles of numbered cards into one sorted pile. You compare the top cards of each pile and always take the smaller one to add to your new pile.
+
+We'll use the in-place merge approach as it's efficient and doesn't require extra space:
+
+1. Create a dummy node as the start of our result list.
+2. Use a pointer to keep track of where we're inserting nodes.
+3. Iterate through both lists simultaneously:
+   - Compare the current nodes of both lists.
+   - Append the smaller node to our result list.
+   - Move forward in the list we took the node from.
+4. If one list is exhausted, append the remainder of the other list.
+5. Return the next node after the dummy node (the actual head of our merged list).
+
+This approach is optimal because it merges the lists in a single pass and doesn't create any new nodes.
+
+## 3. Python Implementation
+
+```python
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+def mergeTwoLists(list1: ListNode, list2: ListNode) -> ListNode:
+    dummy = ListNode(0)
+    current = dummy
+    
+    while list1 and list2:
+        if list1.val <= list2.val:
+            current.next = list1
+            list1 = list1.next
+        else:
+            current.next = list2
+            list2 = list2.next
+        current = current.next
+    
+    if list1:
+        current.next = list1
+    if list2:
+        current.next = list2
+    
+    return dummy.next
+```
+
+- We use a `dummy` node to simplify handling the head of the merged list.
+- `current` keeps track of the last node in our merged list.
+- We compare `list1.val` and `list2.val`, always choosing the smaller one.
+- After the loop, we append any remaining nodes from either list.
+
+## Part 4: Remove Nth Node From End of List
+
+## 1. Problem Statement
+
+Given the head of a linked list, remove the nth node from the end of the list and return its head.
+
+**Example 1:**
+Input: head = [1,2,3,4,5], n = 2
+Output: [1,2,3,5]
+
+**Example 2:**
+Input: head = [1], n = 1
+Output: []
+
+**Example 3:**
+Input: head = [1,2], n = 1
+Output: [1]
+
+**Constraints:**
+- The number of nodes in the list is sz.
+- 1 <= sz <= 30
+- 0 <= Node.val <= 100
+- 1 <= n <= sz
+
+## 2. Conceptual Understanding
+
+This problem involves manipulating a linked list, which is a linear data structure where elements are stored in nodes. Each node contains a data field and a reference (or link) to the next node in the sequence.
+
+The challenge here is to remove a node from a specific position, counting from the end of the list. This requires us to think about how to traverse the list and keep track of positions relative to the end.
+
+We'll use the one-pass algorithm with two pointers, as it's efficient and doesn't require extra space:
+
+1. Initialize two pointers, `fast` and `slow`, to the head of the list.
+2. Move `fast` n nodes ahead.
+3. If `fast` is null, it means we need to remove the head. Return `head.next`.
+4. Move both `fast` and `slow` until `fast` reaches the last node.
+5. Now, `slow` is just before the node we want to remove.
+6. Update `slow.next` to skip the next node (effectively removing it).
+7. Return the head of the modified list.
+
+This approach is optimal because it solves the problem in one pass and uses constant extra space.
+
+## 3. Python Implementation
+
+```python
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+def removeNthFromEnd(head: ListNode, n: int) -> ListNode:
+    dummy = ListNode(0)
+    dummy.next = head
+    fast = slow = dummy
+    
+    # Move fast pointer n nodes ahead
+    for _ in range(n):
+        fast = fast.next
+    
+    # Move both pointers until fast reaches the end
+    while fast.next:
+        fast = fast.next
+        slow = slow.next
+    
+    # Remove the nth node
+    slow.next = slow.next.next
+    
+    return dummy.next
+```
+
+- We use a `dummy` node to handle the case where we need to remove the head.
+- `fast` and `slow` are our two pointers.
+- We move `fast` n nodes ahead, then move both until `fast` reaches the end.
+- Finally, we update `slow.next` to skip (and thus remove) the nth node from the end.
+
+
+## Further Exercises for Students
 
 1. Implement a method to find the middle element of the linked list.
 2. Create a method to detect if the linked list has a cycle.
