@@ -183,18 +183,25 @@ ll.display()  # Output: 3 -> 4 -> 1
 Given the `head` of a singly linked list, reverse the list, and return the reversed list.
 
 **Example 1:**
+
 Input: head = [1,2,3,4,5]
+
 Output: [5,4,3,2,1]
 
 **Example 2:**
+
 Input: head = [1,2]
+
 Output: [2,1]
 
 **Example 3:**
+
 Input: head = []
+
 Output: []
 
 **Constraints:**
+
 - The number of nodes in the list is the range [0, 5000].
 - -5000 <= Node.val <= 5000
 
@@ -251,15 +258,21 @@ Merge the two lists in a one sorted list. The list should be made by splicing to
 Return the head of the merged linked list.
 
 **Example 1:**
+
 Input: list1 = [1,2,4], list2 = [1,3,4]
+
 Output: [1,1,2,3,4,4]
 
 **Example 2:**
+
 Input: list1 = [], list2 = []
+
 Output: []
 
 **Example 3:**
+
 Input: list1 = [], list2 = [0]
+
 Output: [0]
 
 **Constraints:**
@@ -327,15 +340,21 @@ def mergeTwoLists(list1: ListNode, list2: ListNode) -> ListNode:
 Given the head of a linked list, remove the nth node from the end of the list and return its head.
 
 **Example 1:**
+
 Input: head = [1,2,3,4,5], n = 2
+
 Output: [1,2,3,5]
 
 **Example 2:**
+
 Input: head = [1], n = 1
+
 Output: []
 
 **Example 3:**
+
 Input: head = [1,2], n = 1
+
 Output: [1]
 
 **Constraints:**
