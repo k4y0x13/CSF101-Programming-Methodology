@@ -147,7 +147,6 @@
   - [Practical Work XIII](./practical_works/pw13.md)
   - [Practical Work XIV](./practical_works/pw14.md)
   - [Practical Work XV](./practical_works/pw15.md)
-  - [Practical Work XIV](./practical_works/pw16.md)
 ---
 - [Assignments Guidelines](./practical_assignments/assignment_guideline.md)
   - [Assignment I SS2025 1EE,1ECE,1ICE,1ME](./practical_assignments/Assignment1_SS2025.md)
