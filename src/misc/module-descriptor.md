@@ -2,7 +2,7 @@
 
 **Programme:** BE in Software Engineering  
 **Credit:** 12  
-**Module Tutor:** Darshan Subedi/Kamal Acharya  
+**Module Tutor:** Sonam Yangchen  
 **Module Coordinator:** Douglas Sim  
 
 ## General Objective
