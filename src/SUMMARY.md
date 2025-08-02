@@ -21,7 +21,7 @@
   - [Boolean Logic and Logic Gates](./unit1/4.boolean-logic-and-logic-gates.md)
   - [Introduction to Computer Architecutre](./unit1/5.Introduction-to-computer-architecture.md)
 
-- [Unit 2 - Programming Fundamentals]()
+<!-- - [Unit 2 - Programming Fundamentals]()
   - [Computational Problem Solving]()
     - [Psuedocode](./unit2/3.1-psuedocode.md)
     - [Flowcharts](./unit2/3.2-flowcharts.md)
@@ -37,7 +37,7 @@
   - [File Operations](./unit2/8.file-operations.md)
     - [Exercise](./unit2/ex_8_file_operations.md)
   - [Unit 2 Challange Ex](./unit2/unit2-challange-ex.md)
-  - [Recursion Examples](./unit2/9.recursion.md)
+  - [Recursion Examples](./unit2/9.recursion.md) -->
 
 <!--NOTE: Old Content-->
 <!--- [Unit 3 - Data Structures]()-->
@@ -52,7 +52,7 @@
 <!--  - [Graph Data Structure](./unit3/5.graph-data-structure.md)-->
 <!--    - [Exercise](./unit3/ex_5_graph_data_structure.md)-->
 
-- [Unit 3 - Data Structures](./unit3/0-slide.md)
+<!-- - [Unit 3 - Data Structures](./unit3/0-slide.md)
   - [Introduction to storing data: The "WHY?"](./unit3/1-intro-why.md)
   - [Elementary Data Structure: The Array](./unit3/2-elementary-ds-array.md)
   - [Linear Data Structures]()
@@ -69,9 +69,9 @@
     - [BST Operations: insert, delete, search](./unit3/3.5.2-bst-operations.md)
     - [Tree Traversals: In-order, Pre-order, Post-order](./unit3/3.5.3-tree-traversals.md)
   - [Graph Data Structure](./unit3/3.6-graph-ds.md)
-  - [Hash Table / Map Data Structure](./unit3/3.7-map-ds.md)
+  - [Hash Table / Map Data Structure](./unit3/3.7-map-ds.md) -->
 
-- [Unit 4 - Searching & Sorting Algorithms](./unit4/0-intro-u4.md)
+<!-- - [Unit 4 - Searching & Sorting Algorithms](./unit4/0-intro-u4.md)
   - [Linear Search](./unit4/1-linear-search.md)
   - [Binary Search](./unit4/2-binary-search.md)
   - [Depth First Search](./unit4/dfs.md)
@@ -127,10 +127,10 @@
   - [Notes](./OOP/Unit5.md)
   - [Practical Worksheets]()
     - [Worksheet1](./OOP/Worksheet1.md)
-    - [Worksheet2](./OOP/Worksheet2.md)
+    - [Worksheet2](./OOP/Worksheet2.md) -->
 ---
 <!--[GitHub Repo Structure](./practical_works/repo_structure.md)-->
-- [Practical_Work Submission Guideline](./practical_works/pw_guideline.md)
+<!-- - [Practical_Work Submission Guideline](./practical_works/pw_guideline.md)
   - [Practical Work 0](./practical_works/pw0.md)
   - [Practical Work I](./practical_works/pw1.md)
   - [Practical Work II](./practical_works/pw2.md)
@@ -155,4 +155,4 @@
   - [Practical Assignment II](./practical_assignments/cap2.md)
   - [Quiz Output Exercise](./practical_assignments/quiz-1.md)
   - [Quiz Time-Space Exercise](./practical_assignments/quiz-2.md)
----
+--- -->
