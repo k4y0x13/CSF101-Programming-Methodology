@@ -21,7 +21,7 @@
   - [Boolean Logic and Logic Gates](./unit1/4.boolean-logic-and-logic-gates.md)
   - [Introduction to Computer Architecutre](./unit1/5.Introduction-to-computer-architecture.md)
 
-<!-- - [Unit 2 - Programming Fundamentals]()
+- [Unit 2 - Programming Fundamentals]()
   - [Computational Problem Solving]()
     - [Psuedocode](./unit2/3.1-psuedocode.md)
     - [Flowcharts](./unit2/3.2-flowcharts.md)
@@ -37,7 +37,7 @@
   - [File Operations](./unit2/8.file-operations.md)
     - [Exercise](./unit2/ex_8_file_operations.md)
   - [Unit 2 Challange Ex](./unit2/unit2-challange-ex.md)
-  - [Recursion Examples](./unit2/9.recursion.md) -->
+  - [Recursion Examples](./unit2/9.recursion.md)
 
 <!--NOTE: Old Content-->
 <!--- [Unit 3 - Data Structures]()-->
