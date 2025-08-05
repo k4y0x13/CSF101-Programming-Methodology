@@ -24,8 +24,8 @@ csf101-python_exercises/
     ├── arithmetic.py
     ├── assignment.py
     ├── comparison.py
-    ├── logical.py
-    └── bitwise.py
+    └── logical.py
+
 ```
 
 Create a new directory called `operators` inside your `csf101-python_exercises` directory.
@@ -221,7 +221,7 @@ Create a new file called `logical.py` in the `operators` directory and complete 
     not y: True
     ```
 
-## Exercise 5: Bitwise Operators
+<!-- ## Exercise 5: Bitwise Operators
 
 File: `operators/bitwise.py`
 
@@ -248,7 +248,7 @@ Create a new file called `bitwise.py` in the `operators` directory and complete 
     ```python
     print(f"a | b: {a | b} (binary: {bin(a | b)})")
     ```
-    Expected output: `a | b: 7 (binary: 0b111)`
+    Expected output: `a | b: 7 (binary: 0b111)` -->
 
 Congratulations!
 
