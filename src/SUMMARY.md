@@ -51,7 +51,7 @@
 <!--  - [Graph Data Structure](./unit3/5.graph-data-structure.md)-->
 <!--    - [Exercise](./unit3/ex_5_graph_data_structure.md)-->
 
- - [Unit 3 - Data Structures](./unit3/0-slide.md)
+- [Unit 3 - Data Structures]()
   - [Introduction to storing data: The "WHY?"](./unit3/1-intro-why.md)
   - [Elementary Data Structure: The Array](./unit3/2-elementary-ds-array.md)
   - [Linear Data Structures]()
