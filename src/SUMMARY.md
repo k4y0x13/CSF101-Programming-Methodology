@@ -129,7 +129,7 @@
     - [Worksheet2](./OOP/Worksheet2.md) -->
 <!-- --- -->
 <!--[GitHub Repo Structure](./practical_works/repo_structure.md)-->
-<!-- - [Practical_Work Submission Guideline](./practical_works/pw_guideline.md)
+- [Practical_Work Submission Guideline](./practical_works/pw_guideline.md)
   - [Practical Work 0](./practical_works/pw0.md)
   - [Practical Work I](./practical_works/pw1.md)
   - [Practical Work II](./practical_works/pw2.md)
@@ -139,14 +139,14 @@
   - [Practical Work VI](./practical_works/pw6.md)
   - [Practical Work VII](./practical_works/pw7.md)
   - [Practical Work VIII](./practical_works/pw8.md)
-  - [Practical Work IX](./practical_works/pw9.md)
+  <!-- - [Practical Work IX](./practical_works/pw9.md)
   - [Practical Work X](./practical_works/pw10.md)
   - [Practical Work XI](./practical_works/pw11.md)
   - [Practical Work XII](./practical_works/pw12.md)
   - [Practical Work XIII](./practical_works/pw13.md)
   - [Practical Work XIV](./practical_works/pw14.md)
   - [Practical Work XV](./practical_works/pw15.md)
----
+<!-- ---
 - [Assignments Guidelines](./practical_assignments/assignment_guideline.md)
   - [Assignment I SS2025 1EE,1ECE,1ICE,1ME](./practical_assignments/Assignment1_SS2025.md)
   - [Assignment II SS2025 1EE,1ECE,1ICE,1ME](./practical_assignments/Assignment2_SS2025.md)
