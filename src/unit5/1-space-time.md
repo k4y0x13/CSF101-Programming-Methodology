@@ -30,7 +30,7 @@ Here are some common time complexities, from fastest to slowest:
 
 ## 1.2 Space Complexity
 
-Space complexity is about **ehow much additional memory an algorithm needs** to run as the input size increases. It's not about the space taken by the input itself, but the extra space the algorithm uses.
+Space complexity is about **how much additional memory an algorithm needs** to run as the input size increases. It's not about the space taken by the input itself, but the extra space the algorithm uses.
 
 Think of it like this: When you're baking cookies, space complexity would be like measuring how many extra bowls, spoons, and baking sheets you need as you make more cookies.
 

@@ -3,11 +3,9 @@
 ## Objective
 In this lab, you will implement a singly linked list data structure in Python. You'll create basic operations and list manipulation functions, gaining a deeper understanding of linked data structures and their operations.
 
-**Submission Date:** November 1st
-
 ## Prerequisites
 - Basic knowledge of Python syntax
-- Understanding of classes and object-oriented programming in Python
+- Understanding of classes
 - Familiarity with data structures concepts
 
 ## Part 1: Singly Linked List Implementation

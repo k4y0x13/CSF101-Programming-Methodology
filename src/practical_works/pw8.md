@@ -90,7 +90,7 @@ print(queue.front())  # Should print 2
 print(queue.size())  # Should print 2
 ```
 
-<!-- ## Part 3: Leetcode Lesson: Implementing Stack Using Queue
+## Part 3: Leetcode Lesson: Implementing Stack Using Queue
 
 ### 1. Problem Statement
 
@@ -308,4 +308,4 @@ def isValid(s: str) -> bool:
 
 In this lab, you've implemented stack and queue data structures in Python and used them to solve practical problems. These fundamental data structures are crucial in computer science and are used in various applications, from algorithm implementation to system design.
 
-Remember to test your code with different inputs to ensure it works correctly in various scenarios. As you progress, try to think of other real-world problems that could be solved using stacks and queues. -->
+Remember to test your code with different inputs to ensure it works correctly in various scenarios. As you progress, try to think of other real-world problems that could be solved using stacks and queues.
