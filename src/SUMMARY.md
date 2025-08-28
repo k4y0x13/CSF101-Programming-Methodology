@@ -63,7 +63,7 @@
     - [Linked (Singly) Lists](./unit3/3.4.1-linked-list-ds.md)
     - [Doubly Linked Lists](./unit3/3.4.2-doubly-linked-list-ds.md)
     - [Circular Linked Lists](./unit3/3.4.3-circular-linked-list-ds.md)
-<!--  - [Tree Data Structure](./unit3/3.5-tree-ds.md)
+  - [Tree Data Structure](./unit3/3.5-tree-ds.md)
     - [Binary Search Trees](./unit3/3.5.1-binary-search-tree-ds.md)
     - [BST Operations: insert, delete, search](./unit3/3.5.2-bst-operations.md)
     - [Tree Traversals: In-order, Pre-order, Post-order](./unit3/3.5.3-tree-traversals.md)
