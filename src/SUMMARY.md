@@ -140,10 +140,10 @@
   - [Practical Work VII](./practical_works/pw7.md)
   - [Practical Work VIII](./practical_works/pw8.md)
   - [Practical Work IX](./practical_works/pw9.md)
-  <!-- - [Practical Work X](./practical_works/pw10.md)
-  - [Practical Work XI](./practical_works/pw11.md)
+  - [Practical Work X](./practical_works/pw10.md)
+  <!--- [Practical Work XI](./practical_works/pw11.md)
   - [Practical Work XII](./practical_works/pw12.md)
-  - [Practical Work XIII](./practical_works/pw13.md)
+  - [Practical Work XIII](./practical_works/pw13.md) -->
   - [Practical Work XIV](./practical_works/pw14.md)
   - [Practical Work XV](./practical_works/pw15.md)
 <!-- ---
