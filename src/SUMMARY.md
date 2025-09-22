@@ -80,8 +80,8 @@
     - [Quick Sort](./unit4/4.7-quick-sort.md)
 
  - [Unit 5 - Introduction to Computational Problems & Strategies]()
-  - [Space Time Complexity - Asymptotic Notation](./unit5/1-space-time.md)
-    - [Exercise](./unit5/ex-1-time-space.md)
+    - [Space Time Complexity - Asymptotic Notation](./unit5/1-space-time.md)
+      - [Exercise](./unit5/ex-1-time-space.md)
  <!-- - [Arrays & Hashing]()
     - [Contains Duplicate Problem](./unit5/contains-duplicate.md)
     - [Valid Anagram Problem](./unit5/valid-anagram.md)
