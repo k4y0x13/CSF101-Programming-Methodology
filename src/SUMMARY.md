@@ -71,13 +71,13 @@
   - [Hash Table / Map Data Structure](./unit3/3.7-map-ds.md) -->
 
  - [Unit 4 - Searching & Sorting Algorithms](./unit4/0-intro-u4.md)
-  - [Linear Search](./unit4/1-linear-search.md)
-  - [Binary Search](./unit4/2-binary-search.md)
-  - [Depth First Search](./unit4/dfs.md)
-  - [Breadth First Search](./unit4/bfs.md)
-  - [Bubble Sort](./unit4/bubble-sort.md)
-  - [Insertion Sort](./unit4/insertion-sort.md)
-  - [Quick Sort](./unit4/quick-sort.md)
+    - [Linear Search](./unit4/4.1-linear-search.md)
+    - [Binary Search](./unit4/4.2-binary-search.md)
+    - [Depth First Search](./unit4/4.3-dfs.md)
+    - [Breadth First Search](./unit4/4.4-bfs.md)
+    - [Bubble Sort](./unit4/4.5-bubble-sort.md)
+    - [Insertion Sort](./unit4/4.6-insertion-sort.md)
+    - [Quick Sort](./unit4/4.7-quick-sort.md)
 
 <!--- [Unit 5 - Introduction to Computational Problems & Strategies]()
   - [Space Time Complexity - Asymptotic Notation](./unit5/1-space-time.md)
