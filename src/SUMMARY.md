@@ -70,7 +70,7 @@
   - [Graph Data Structure](./unit3/3.6-graph-ds.md)
   - [Hash Table / Map Data Structure](./unit3/3.7-map-ds.md) -->
 
-<!-- - [Unit 4 - Searching & Sorting Algorithms](./unit4/0-intro-u4.md)
+ - [Unit 4 - Searching & Sorting Algorithms](./unit4/0-intro-u4.md)
   - [Linear Search](./unit4/1-linear-search.md)
   - [Binary Search](./unit4/2-binary-search.md)
   - [Depth First Search](./unit4/dfs.md)
@@ -79,7 +79,7 @@
   - [Insertion Sort](./unit4/insertion-sort.md)
   - [Quick Sort](./unit4/quick-sort.md)
 
-- [Unit 5 - Introduction to Computational Problems & Strategies]()
+<!--- [Unit 5 - Introduction to Computational Problems & Strategies]()
   - [Space Time Complexity - Asymptotic Notation](./unit5/1-space-time.md)
     - [Exercise](./unit5/ex-1-time-space.md)
   - [Arrays & Hashing]()
