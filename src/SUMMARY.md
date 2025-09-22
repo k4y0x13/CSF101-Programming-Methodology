@@ -79,10 +79,10 @@
     - [Insertion Sort](./unit4/4.6-insertion-sort.md)
     - [Quick Sort](./unit4/4.7-quick-sort.md)
 
-<!--- [Unit 5 - Introduction to Computational Problems & Strategies]()
+ - [Unit 5 - Introduction to Computational Problems & Strategies]()
   - [Space Time Complexity - Asymptotic Notation](./unit5/1-space-time.md)
     - [Exercise](./unit5/ex-1-time-space.md)
-  - [Arrays & Hashing]()
+ <!-- - [Arrays & Hashing]()
     - [Contains Duplicate Problem](./unit5/contains-duplicate.md)
     - [Valid Anagram Problem](./unit5/valid-anagram.md)
     - [Two Sums Problem](./unit5/two-sums.md)
